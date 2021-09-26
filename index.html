@@ -1,12 +1,360 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
-    <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Описание контента">
+    <meta name="keywords" content="Ключевые, слова, через, запятую">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+  <body class="page">
 
+    <!-- header start -->
+      <header class="header container">
+        <div class="header__inner">
+
+          <!-- header-logo start -->
+            <div class="header-logo">
+              <a class="header-logo__link">
+                <img class="header-logo__image" src="images/header-logo/header-logo.svg" width="145" height="36" alt="Логотип интернет магазина 'Device'">
+              </a>
+            </div>
+          <!-- header-logo end -->
+
+          <!-- header-navigation start -->
+            <nav class="header-navigation">
+
+              <!-- header-top -->
+                <div class="header-top">
+
+                    <!-- header-search start -->
+                      <div class="header-search">
+                        <form class="header-search__form">
+                          <label class="header-search__label">
+                            <input class="header-search__input" name="site-search" type="search" placeholder="Поиск по сайту">
+                              <span class="visually-hidden">Поиск по сайту</span>
+                          </label>
+                            <button class="header-search__submit" type="submit">Найти</button>
+                        </form>
+                      </div>
+                    <!-- header-search end -->
+
+                  <ul class="header-top__list">
+                    <li class="header-top__item">
+                      <a class="header-top__link" href="#">Войти</a>
+                    </li>
+                    <li class="header-top__item">
+                      <a class="header-top__link" href="#">Сравнить</a>
+                    </li>
+                    <li class="header-top__item">
+                      <a class="header-top__link" href="#">Корзина</a>
+                    </li>
+                  </ul>
+                </div>
+              <!-- header-top end -->
+
+              <!-- header-bottom start -->
+                <div class="header-bottom">
+                  <ul class="header-bottom__list">
+                    <li class="header-bottom__item">
+                      <a class="header-bottom__link" href="#">Каталог товаров</a>
+                    </li>
+                    <li class="header-bottom__item">
+                      <a class="header-bottom__link" href="#">Доставка</a>
+                    </li>
+                    <li class="header-bottom__item">
+                      <a class="header-bottom__link" href="#">Гарантия</a>
+                    </li>
+                    <li class="header-bottom__item">
+                      <a class="header-bottom__link" href="#">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              <!-- header-bottom end -->
+
+            </nav>
+          <!-- header-navigation end -->
+
+        </div>
+      </header>
+    <!-- header end -->
+
+    <!-- main start -->
+      <main class="main">
+        <h1 class="visually-hidden">Главная страница интернет магазина 'Device'</h1>
+
+          <!-- promo-slider start -->
+            <section class="promo-slider container">
+              <div class="promo-slider__inner">
+                <ul class="promo-slider__list">
+                  <li class="promo-slider__item promo-slider__item--current">
+                    <div class="promo-slider__images">
+                      <img class="promo-slider__image" src="images/promo-slider/quadcopter.png" width="560" height="560" alt="Квадрокоптер">
+                        <button class="promo-slider__button slider-prev" type="button">
+                          <span class="visually-hidden">Предыдущее фото</span>
+                        </button>
+                        <button class="promo-slider__button slider-next" type="button">
+                          <span class="visually-hidden">Следующее фото</span>
+                        </button>
+                    </div>
+                    <div class="promo-slider__description">
+                      <h2 class="promo-slider__title">Порхает как бабочка, жалит как пчела!</h2>
+                        <p class="promo-slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                          <div class="promo-slider__space-between">
+                            <a class="promo-slider__link link-effect">Подробнее</a>
+                              <ul class="promo-slider__list">
+                                <li class="promo-slider__point promo-slider__point--active">
+                                  <label class="promo-slider__label">
+                                    <input class="visually-hidden" type="radio" name="slider-point" checked>
+                                      <span class="visually-hidden">Первый слайдер</span>
+                                  </label>
+                                </li>
+                                <li class="promo-slider__point">
+                                  <label class="promo-slider__label">
+                                    <input class="visually-hidden" type="radio" name="slider-point">
+                                      <span class="visually-hidden">Второй слайдер</span>
+                                  </label>
+                                </li>
+                                <li class="promo-slider__point">
+                                  <label class="promo-slider__label">
+                                    <input class="visually-hidden" type="radio" name="slider-point">
+                                      <span class="visually-hidden">Третий слайдер</span>
+                                  </label>
+                                </li>
+                              </ul>
+                          </div>
+                            <dl class="promo-slider__list">
+                              <dt class="promo-slider__term">800 м</dt>
+                              <dd class="promo-slider__definition">Дальность полета</dd>
+                              <dt class="promo-slider__term">50 м</dt>
+                              <dd class="promo-slider__definition">Радиус поражения</dd>
+                            </dl>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          <!-- promo-slider end -->
+
+          <!-- goods start -->
+            <section class="goods container">
+              <div class="goods__inner">
+                <h2 class="visually-hidden">Товары</h2>
+                  <ul class="goods__list">
+                    <li class="goods__item">
+                      <img class="goods__image" src="images/goods/virtual-reality.png" width="160" height="160" alt="Виртуальная реальность">
+                        <p class="goods__text">Виртуальная реальность</p>
+                    </li>
+                    <li class="goods__item">
+                      <img class="goods__image" src="images/goods/monopods-for-selfie.png" width="160" height="160" alt="Моноподы для селфи">
+                        <p class="goods__text">Моноподы для селфи</p>
+                    </li>
+                    <li class="goods__item">
+                      <img class="goods__image" src="images/goods/action-cameras.png" width="160" height="160" alt="Экшн-камеры">
+                        <p class="goods__text">Экшн-камеры</p>
+                    </li>
+                    <li class="goods__item">
+                      <img class="goods__image" src="images/goods/fitness-bracelets.png" width="160" height="160" alt="Фитнес-браслеты">
+                        <p class="goods__text">Фитнес-браслеты</p>
+                    </li>
+                    <li class="goods__item">
+                      <img class="goods__image" src="images/goods/smart-watch.png" width="160" height="160" alt="Умные часы">
+                        <p class="goods__text">Умные часы</p>
+                    </li>
+                    <li class="goods__item">
+                      <img class="goods__image" src="images/goods/quadrocopters.png" width="160" height="160" alt="Квадрокоптеры">
+                        <p class="goods__text">Квадрокоптеры</p>
+                    </li>
+                  </ul>
+              </div>
+            </section>
+          <!-- goods end -->
+
+          <!-- services start -->
+            <section class="services">
+              <div class="container">
+                <div class="services__inner">
+                  <h2 class="visually-hidden">Услуги</h2>
+
+                    <!-- services-menu start -->
+                      <div class="services-menu">
+                        <ul class="services-menu__list">
+                          <li class="services-menu__item services-menu__item--active">
+                            <a class="services-menu-link" href="#">Доставка</a>
+                          </li>
+                          <li class="services-menu__item">
+                            <a class="services-menu__link" href="#">Гарантия</a>
+                          </li>
+                          <li class="services-menu__item">
+                            <a class="services-menu__link" href="#">Кредит</a>
+                          </li>
+                        </ul>
+                      </div>
+                    <!-- services-menu end -->
+
+                    <!-- services-description start -->
+                      <div class="services-description">
+                        <ul class="services-description__list">
+                          <li class="services-description__item services-description__item--current">
+                            <h3 class="services-description__subtitle">Доставка</h3>
+                              <p class="services-description__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                          </li>
+                          <li class="services-description__item">
+                            <h3 class="services-description__subtitle">Гарантия</h3>
+                              <p class="services-description__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                          </li>
+                          <li class="services-description__item">
+                            <h3 class="services-description__subtitle">Кредит</h3>
+                              <p class="services-description__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+                          </li>
+                        </ul>
+                      </div>
+                    <!-- services-description end -->
+
+                </div>
+              </div>
+            </section>
+          <!-- services end -->
+
+
+          <!-- rare-commodity start -->
+            <section class="rare-commodity container">
+              <div class="rare-commodity__inner">
+                <h2 class="visually-hidden">Доставка товара</h2>
+                  <p class="rare-commodity__text">Доставим редкий товар под заказ</p>
+              </div>
+            </section>
+          <!-- rare-commodity end -->
+
+          <!-- about-section start -->
+            <section class="about-section container">
+              <div class="about-section__inner">
+
+                <!-- about-us start -->
+                  <div class="about-us">
+                    <h2 class="about-us__title">О нас</h2>
+                      <p class="about-us__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+                      <p class="about-us__description"> Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+                        <ul class="about-us__list">
+                          <li class="about-us__item">Меловые линии</li>
+                          <li class="about-us__item">СДИК</li>
+                          <li class="about-us__item">ТоксБерри</li>
+                        </ul>
+                          <a class="about-us__link link-effect" href="#">Подробнее о нас</a>
+                  </div>
+                <!-- about-us end -->
+
+                <!-- contacts start -->
+                  <div class="contacts">
+                    <h2 class="contacts__title">Контакты</h2>
+                      <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки. </p>
+                        <h3 class="contacts__subtitle">Интернет-магазин «Девайс»</h3>
+                          <address class="contacts__address">
+                            <p class="contacts__text">Санкт-Петербург, набережная реки Карповки, 5, литера П. <br /> <a class="contacts__tel" href="tel:78128121212">+7 (812) 812-12-12</a></p>
+                          </address>
+                        <h3 class="contacts__subtitle">Время работы</h3>
+                          <ul class="contacts__list">
+                            <li class="contacts__item">пн—пт: с 10:00 до 22:00</li>
+                            <li class="contacts__item">сб—вс: с 10:00 до 19:00</li>
+                          </ul>
+                            <a class="contacts__link link-effect" href="#">Подробнее о нас</a>
+                  </div>
+                <!-- contacts end -->
+
+              </div>
+            </section>
+          <!-- about-section end -->
+
+          <!-- distribution start -->
+            <section class="distribution">
+              <div class="container">
+                <div class="distribution__inner">
+                  <div class="distribution__top">
+                    <h2 class="distribution__title">Подпишитесь на рассылку</h2>
+                      <p class="distribution__description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+                  </div>
+                  <div class="distribution__bottom">
+                    <form class="distribution__form">
+                      <label class="visually-hidden" for="your-emali-binding">Ваш e-mail</label>
+                        <input class="distribution__email" name="your-emali" id="your-emali-binding" type="email" placeholder="Ваш e-mail" required>
+                          <button class="distribution__submit" type="submit">Подписаться</button>
+                    </form>
+                      <p class="distribution__text">Это бесплатно</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          <!-- distribution end -->
+
+      </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+
+            <!-- footer-logo start -->
+              <div class="footer-logo">
+                <a class="footer-logo__link">
+                  <img class="footer-logo__image" src="images/footer-logo/footer-logo.svg" width="145" height="36" alt="Логотип интернет магазина 'Device'">
+                </a>
+              </div>
+            <!-- footer-logo end -->
+
+            <!-- footer-navigation start -->
+              <div class="footer-navigation">
+                <address class="footer-navigation__address">
+                  <p class="footer-navigation__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                </address>
+                <ul class="footer-navigation__list">
+                  <li class="footer-navigation__item">
+                    <a class="footer-navigation__link" href="#">Доставка</a>
+                  </li>
+                  <li class="footer-navigation__item">
+                    <a class="footer-navigation__link" href="#">Гарантия</a>
+                  </li>
+                  <li class="footer-navigation__item">
+                    <a class="footer-navigation__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+                <a class="footer-navigation__link" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
+              </div>
+            <!-- footer-navigation end -->
+
+            <!-- footer-social start -->
+              <div class="footer-social">
+                <ul class="footer-social__list">
+                  <li class="footer-social__item">
+                    <a class="footer-social__link" href="https://www.facebook.com/htmlacademy">
+                      <span class="visually-hidden">Фэйсбук</span>
+                    </a>
+                  </li>
+                  <li class="footer-social__item">
+                    <a class="footer-social__link" href="https://www.instagram.com/htmlacademy">
+                      <span class="visually-hidden">Инстаграм</span>
+                    </a>
+                  </li>
+                  <li class="footer-social__item">
+                    <a class="footer-social__link" href="https://www.twitter.com/htmlacademy_ru">
+                      <span class="visually-hidden">Твиттер</span>
+                    </a>
+                  </li>
+                </ul>
+                  <img class="footer-social__htmlacademy" src="images/footer-logo/footer-htmlacademy.svg" width="115" height="34" alt="Логотип 'htmlAcademy">
+              </div>
+            <!-- footer-social end -->
+
+          </div>
+        </div>
+      </footer>
+    <!-- footer end -->
+
+    <script src="js/script.js"></script>
   </body>
+
 </html>
