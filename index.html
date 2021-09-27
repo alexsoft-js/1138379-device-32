@@ -16,88 +16,80 @@
       <header class="header container">
         <div class="header__inner">
 
-          <div class="header__logo">
-            <a class="header__logo-link">
-              <img class="header__logo-image" src="images/header-logo/header-logo.svg" width="145" height="36" alt="Логотип интернет магазина 'Device'.">
-            </a>
-          </div>
+          <a class="header__logo-link">
+            <img class="header__logo-image" src="images/header-logo/header-logo.svg" width="145" height="36" alt="Логотип интернет магазина 'Device'.">
+          </a>
 
-            <nav class="header__navigation">
-
-              <div class="header__top">
-
-                <!-- header-search start -->
-                  <form class="header-search header__search-form " action="https://echo.htmlacademy.ru" method="get">
-                    <label class="header-search__label">
-                      <input class="header-search__input" name="site-search" type="search" placeholder="Поиск по сайту">
-                      <span class="visually-hidden">Поиск по сайту.</span>
-                    </label>
-                    <button class="header-search__submit" type="submit">Найти</button>
-                  </form>
-                <!-- header-search end -->
-
-                <div class="header__top-list">
-                  <div class="header__top-item">
-                    <a class="header__top-link" href="#">Войти</a>
-                  </div>
-                  <li class="header__top-item">
-                    <a class="header__top-link" href="#">Сравнить</a>
-                  </li>
-                  <li class="header__top-item">
-                    <a class="header__top-link" href="#">Корзина</a>
-                      <div class="header-top__basket">
-                        <ul class="header-top__basket-list">
-                          <li class="header-top__basket-item">
-                            <img class="header-top__basket-image" src="#" width="41" height="43" alt="Любительская селфи-палка.">
-                            <a class="header-top__basket-link" href="#">Любительская селфи-палка</a>
-                          </li>
-                          <li class="header-top__basket-item">
-                            <img class="header-top__basket-image" src="#" width="41" height="43" alt="Профессиональная селфи-палка.">
-                            <a class="header-top__basket-link" href="#">Профессиональная селфи-палка</a>
-                          </li>
-                        </ul>
-                        <div class="header-top__basket-block">
-                          <p class="header-top__basket-text">Товаров: 2</p>
-                          <p class="header-top__basket-text">Сумма: 2000 ₽</p>
-                        </div>
-                        <a class="header-top__basket-open">Открыть корзину</a>
-                      </div>
-                  </li>
-                </div>
-              </div>
-
-              <!-- header-bottom start -->
-                <ul class="header-bottom__list">
-                  <li class="header-bottom__item">
-                    <a class="header-bottom__link" href="catalog.html">Каталог товаров</a>
-                      <ul class="header-button__catalog-list">
-                        <li class="header-button__catalog-item">
-                          <a class="header-button__catalog__link" href="#">Виртуальная реальность</a>
-                          <a class="header-button__catalog__link" href="#">Моноподы для cелфи</a>
-                          <a class="header-button__catalog__link" href="#">Экшн-камеры</a>
+          <nav class="header__navigation">
+            <div class="header__top">
+              <!-- header-search start -->
+                <form class="header-search header__search-form " action="https://echo.htmlacademy.ru" method="get">
+                  <label class="header-search__label">
+                    <input class="header-search__input" name="site-search" type="search" placeholder="Поиск по сайту">
+                    <span class="visually-hidden">Поиск по сайту.</span>
+                  </label>
+                  <button class="header-search__submit" type="submit">Найти</button>
+                </form>
+              <!-- header-search end -->
+                <a class="header__top-link" href="#">Войти</a>
+                <a class="header__top-link" href="#">Сравнить</a>
+                <div class="header__top-block">
+                  <a class="header__top-link" href="#">Корзина</a>
+                    <div class="header__top-basket">
+                      <ul class="header__top-basket-list">
+                        <li class="header__top-basket-item">
+                          <img class="header__top-basket-image" src="#" width="41" height="43" alt="Любительская селфи-палка.">
+                          <a class="header__top-basket-link" href="#">Любительская селфи-палка</a>
                         </li>
-                        <li class="header-button__catalog-item">
-                          <a class="header-button__catalog__link" href="#">Фитнес-браслеты</a>
-                          <a class="header-button__catalog__link" href="#">Умные часы</a>
-                        </li>
-                        <li class="header-button__catalog-item">
-                          <a class="header-button__catalog__link" href="#">Квадрокоптеры</a>
+                        <li class="header__top-basket-item">
+                          <img class="header__top-basket-image" src="#" width="41" height="43" alt="Профессиональная селфи-палка.">
+                          <a class="header__top-basket-link" href="#">Профессиональная селфи-палка</a>
                         </li>
                       </ul>
-                  </li>
-                  <li class="header-bottom__item">
-                    <a class="header-bottom__link" href="#">Доставка</a>
-                  </li>
-                  <li class="header-bottom__item">
-                    <a class="header-bottom__link" href="#">Гарантия</a>
-                  </li>
-                  <li class="header-bottom__item">
-                    <a class="header-bottom__link" href="#">Контакты</a>
-                  </li>
-                </ul>
-              <!-- header-bottom end -->
+                      <div class="header__top-basket-block">
+                        <p class="header__top-basket-text">Товаров: 2</p>
+                        <p class="header__top-basket-text">Сумма: 2000 ₽</p>
+                      </div>
+                      <a class="header__top-basket-open">Открыть корзину</a>
+                    </div>
+                </div>
+            </div>
 
-            </nav>
+            <ul class="header__bottom-list">
+              <li class="header__bottom-item">
+                <a class="header__bottom-link" href="catalog.html">Каталог товаров</a>
+                  <ul class="header__button-catalog-list">
+                    <li class="header__button-catalog-item">
+                      <a class="header__button-catalog-link" href="#">Виртуальная реальность</a>
+                    </li>
+                    <li class="header__button-catalog-item">
+                      <a class="header__button-catalog-link" href="#">Моноподы для cелфи</a>
+                    </li>
+                    <li class="header__button-catalog-item">
+                      <a class="header__button-catalog-link" href="#">Экшн-камеры</a>
+                    </li>
+                    <li class="header__button-catalog-item">
+                      <a class="header__button-catalog-link" href="#">Фитнес-браслеты</a>
+                    </li>
+                    <li class="header__button-catalog-item">
+                      <a class="header__button-catalog-link" href="#">Умные часы</a>
+                    </li>
+                    <li class="header__button-catalog-item">
+                      <a class="header__button-catalog-link" href="#">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+              </li>
+              <li class="header__bottom-item">
+                <a class="header__bottom-link" href="#">Доставка</a>
+              </li>
+              <li class="header__bottom-item">
+                <a class="header__bottom-link" href="#">Гарантия</a>
+              </li>
+              <li class="header__bottom-item">
+                <a class="header__bottom-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
 
         </div>
       </header>
@@ -169,28 +161,23 @@
                   <span class="visually-hidden">Следующий слайд.</span>
                 </button>
 
-                <form class="promo-slider__form">
                   <ul class="promo-slider__list">
                     <li class="promo-slider__point promo-slider__point--active">
-                      <label class="promo-slider__label">
-                        <input class="visually-hidden" type="radio" name="slider-point" checked>
+                      <button class="promo-slider__button" type="button">
                         <span class="visually-hidden">Первый слайд.</span>
-                      </label>
+                      </button>
                     </li>
                     <li class="promo-slider__point">
-                      <label class="promo-slider__label">
-                        <input class="visually-hidden" type="radio" name="slider-point">
+                      <button class="promo-slider__button" type="button">
                         <span class="visually-hidden">Второй слайд.</span>
-                      </label>
+                      </button>
                     </li>
                     <li class="promo-slider__point">
-                      <label class="promo-slider__label">
-                        <input class="visually-hidden" type="radio" name="slider-point">
+                      <button class="promo-slider__button" type="button">
                         <span class="visually-hidden">Третий слайд.</span>
-                      </label>
+                      </button>
                     </li>
                   </ul>
-                </form>
 
             </section>
           <!-- promo-slider end -->
@@ -199,42 +186,42 @@
             <section class="goods container">
               <h2 class="visually-hidden">Товары</h2>
                 <ul class="goods__list">
-                  <a class="goods__link" href="#">
-                    <li class="goods__item">
+                  <li class="goods__item">
+                    <a class="goods__link" href="#">
                       <img class="goods__image" src="images/goods/virtual-reality.png" width="160" height="160" alt="Виртуальная реальность.">
                       <span class="goods__text">Виртуальная реальность</span>
-                    </li>
-                  </a>
-                  <a class="goods__link" href="#">
-                    <li class="goods__item">
+                    </a>
+                  </li>
+                  <li class="goods__item">
+                    <a class="goods__link" href="#">
                       <img class="goods__image" src="images/goods/monopods-for-selfie.png" width="160" height="160" alt="Моноподы для селфи.">
                       <span class="goods__text">Моноподы для селфи</span>
-                    </li>
-                  </a>
-                  <a class="goods__link" href="#">
-                    <li class="goods__item">
+                    </a>
+                  </li>
+                  <li class="goods__item">
+                    <a class="goods__link" href="#">
                       <img class="goods__image" src="images/goods/action-cameras.png" width="160" height="160" alt="Экшн-камеры.">
                       <span class="goods__text">Экшн-камеры</span>
-                    </li>
-                  </a>
-                  <a class="goods__link" href="#">
-                    <li class="goods__item">
+                    </a>
+                  </li>
+                  <li class="goods__item">
+                    <a class="goods__link" href="#">
                       <img class="goods__image" src="images/goods/fitness-bracelets.png" width="160" height="160" alt="Фитнес-браслеты.">
                       <span class="goods__text">Фитнес-браслеты</span>
-                    </li>
-                  </a>
-                  <a class="goods__link" href="#">
-                    <li class="goods__item">
+                    </a>
+                  </li>
+                  <li class="goods__item">
+                    <a class="goods__link" href="#">
                       <img class="goods__image" src="images/goods/smart-watch.png" width="160" height="160" alt="Умные часы.">
                       <span class="goods__text">Умные часы</span>
-                    </li>
-                  </a>
-                  <a class="goods__link" href="#">
-                    <li class="goods__item">
+                    </a>
+                  </li>
+                  <li class="goods__item">
+                    <a class="goods__link" href="#">
                       <img class="goods__image" src="images/goods/quadrocopters.png" width="160" height="160" alt="Квадрокоптеры.">
                       <span class="goods__text">Квадрокоптеры</span>
-                    </li>
-                  </a>
+                    </a>
+                  </li>
                 </ul>
             </section>
           <!-- goods end -->
@@ -281,12 +268,8 @@
 
           <!-- rare-commodity start -->
             <section class="rare-commodity container">
-              <div class="rare-commodity__inner">
-                <h2 class="visually-hidden">Доставка товара</h2>
-                <a class="rare-commodity__link">
-                  <p class="rare-commodity__text">Доставим редкий товар под заказ</p>
-                </a>
-              </div>
+              <h2 class="visually-hidden">Доставка товара</h2>
+              <a class="rare-commodity__link" href="#">Доставим редкий товар под заказ</a>
             </section>
           <!-- rare-commodity end -->
 
@@ -330,20 +313,18 @@
 
           <!-- distribution start -->
             <section class="distribution">
-              <div class="container">
-                <div class="distribution__inner">
-                  <div class="distribution__top">
-                    <h2 class="distribution__title">Подпишитесь на рассылку</h2>
-                    <p class="distribution__description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-                  </div>
-                  <div class="distribution__bottom">
-                    <form class="distribution__form" action="https://echo.htmlacademy.ru" method="post">
-                      <label class="visually-hidden" for="your-email-binding">Ваш e-mail.</label>
-                      <input class="distribution__email" name="your-emali" id="your-email-binding" type="email" placeholder="Ваш e-mail" required>
-                      <button class="distribution__submit" type="submit">Подписаться</button>
-                    </form>
-                    <p class="distribution__text">Это бесплатно</p>
-                  </div>
+              <div class="distribution__inner container">
+                <div class="distribution__top">
+                  <h2 class="distribution__title">Подпишитесь на рассылку</h2>
+                  <p class="distribution__description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+                </div>
+                <div class="distribution__bottom">
+                  <form class="distribution__form" action="https://echo.htmlacademy.ru" method="post">
+                    <label class="visually-hidden" for="your-email-binding">Ваш e-mail.</label>
+                    <input class="distribution__email" name="your-emali" id="your-email-binding" type="email" placeholder="Ваш e-mail" required>
+                    <button class="distribution__submit" type="submit">Подписаться</button>
+                  </form>
+                  <p class="distribution__text">Это бесплатно</p>
                 </div>
               </div>
             </section>
@@ -354,56 +335,49 @@
 
     <!-- footer start -->
       <footer class="footer">
-        <div class="container footer__inner">
+        <div class="footer__inner container">
 
-          <div class="footer__logo">
-            <a class="footer__logo-link">
-              <img class="footer__logo-image" src="images/footer-logo/footer-logo.svg" width="145" height="36" alt="Логотип интернет магазина 'Device'.">
-            </a>
+          <a class="footer__logo-link">
+            <img class="footer__logo-image" src="images/footer-logo/footer-logo.svg" width="145" height="36" alt="Логотип интернет магазина 'Device'.">
+          </a>
+
+          <div class="footer__navigation">
+            <p class="footer__navigation-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <ul class="footer__navigation-list">
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#">Доставка</a>
+              </li>
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#">Гарантия</a>
+              </li>
+              <li class="footer__navigation-item">
+                <a class="footer__navigation-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <a class="footer__navigation-link" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
           </div>
 
-          <!-- footer-navigation start -->
-            <div class="footer-navigation">
-              <address class="footer-navigation__address">
-                <p class="footer-navigation__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-              </address>
-              <ul class="footer-navigation__list">
-                <li class="footer-navigation__item">
-                  <a class="footer-navigation__link" href="#">Доставка</a>
-                </li>
-                <li class="footer-navigation__item">
-                  <a class="footer-navigation__link" href="#">Гарантия</a>
-                </li>
-                <li class="footer-navigation__item">
-                  <a class="footer-navigation__link" href="#">Контакты</a>
-                </li>
-              </ul>
-              <a class="footer-navigation__link" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
-            </div>
-          <!-- footer-navigation end -->
+          <ul class="footer__social">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Фэйсбук.</span>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://www.instagram.com/htmlacademy">
+                <span class="visually-hidden">Инстаграм.</span>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="https://www.twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">Твиттер.</span>
+              </a>
+            </li>
+          </ul>
 
-          <!-- footer-social start -->
-            <div class="footer-social">
-              <ul class="footer-social__list">
-                <li class="footer-social__item">
-                  <a class="footer-social__link" href="https://www.facebook.com/htmlacademy">
-                    <span class="visually-hidden">Фэйсбук.</span>
-                  </a>
-                </li>
-                <li class="footer-social__item">
-                  <a class="footer-social__link" href="https://www.instagram.com/htmlacademy">
-                    <span class="visually-hidden">Инстаграм.</span>
-                  </a>
-                </li>
-                <li class="footer-social__item">
-                  <a class="footer-social__link" href="https://www.twitter.com/htmlacademy_ru">
-                    <span class="visually-hidden">Твиттер.</span>
-                  </a>
-                </li>
-              </ul>
-              <img class="footer-social__htmlacademy" src="images/footer-logo/footer-htmlacademy.svg" width="115" height="34" alt="Логотип 'htmlAcademy.">
-            </div>
-          <!-- footer-social end -->
+          <a class="footer__htmlacademy-link" href="#">
+            <img class="footer__htmlacademy-image" src="images/footer-logo/footer-htmlacademy.svg" width="115" height="34" alt="Логотип 'htmlacademy.">
+          </a>
 
         </div>
       </footer>
