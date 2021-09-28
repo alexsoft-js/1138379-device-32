@@ -22,6 +22,7 @@
 
           <nav class="header__navigation">
             <div class="header__top">
+
               <!-- header-search start -->
                 <form class="header-search header__search-form " action="https://echo.htmlacademy.ru" method="get">
                   <label class="header-search__label">
@@ -31,7 +32,8 @@
                   <button class="header-search__submit" type="submit">Найти</button>
                 </form>
               <!-- header-search end -->
-                <a class="header__top__link" href="#">Александр Воронин</a>
+
+                <a class="header__top-link" href="#">Александр Воронин</a>
                 <a class="header__top-link" href="#">Выйти</a>
                 <a class="header__top-link" href="#">Сравнить</a>
                 <div class="header__top-block">
@@ -100,7 +102,7 @@
       <main class="main">
         <h1 class="visually-hidden">Каталог интернет магазина 'Device'</h1>
 
-        <div class="main__container">
+        <section class="main__container">
           <h2 class="main__title">Моноподы для селфи</h2>
           <ul class="main__list">
             <li class="main__item">
@@ -111,16 +113,16 @@
             </li>
             <li class="main__item">Моноподы для селфи</li>
           </ul>
-        </div>
+        </section>
 
         <div class="catalog">
 
           <!-- filters start -->
-            <div class="filters">
+            <section class="filters">
 
-              <div class="filters__top">
+              <section class="filters__top">
                 <h2 class="filters__title">Фильтр:</h2>
-              </div>
+              </section>
 
               <div class="filters__content">
                 <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
@@ -171,55 +173,73 @@
                 </form>
               </div>
 
-            </div>
+            </section>
           <!-- filters end -->
 
           <!-- products start -->
-            <div class="products">
-              <div class="products__top">
+            <section class="products">
+
+              <section class="products__top">
                 <h2 class="products__title">Сортировка:</h2>
-                <a class="products__popular-first" href="#popular-first">Сначала популярные</a>
+                <div class="products__block">
+                  <a class="products__popular-first" href="#popular-first">Сначала популярные</a>
+                  <ul class="products__sort-list">
+                    <li class="products__sort-item">
+                      <a class="visually-hidden" href="#"></a>
+                      <a class="visually-hidden" href="#"></a>
+                      <a class="visually-hidden" href="#"></a>
+                    </li>
+                  </ul>
+                </div>
                 <a class="products__arrow" href="#up">
                   <span class="visually-hidden">Вверх</span>
                 </a>
                 <a class="products__arrow" href="#down">
                   <span class="visually-hidden">Вниз</span>
                 </a>
-              </div>
+              </section>
 
               <div class="products__content">
                 <ul class="products__list">
                   <li class="products__item">
                     <div class="products__info">
-                      <h3 class="products__subtitle">Любительская селфи-палка</h3>
+                      <a class="products__link" href="#">
+                        <h3 class="products__subtitle">Любительская селфи-палка</h3>
+                      </a>
                       <span class="products__price">500 ₽</span>
                     </div>
                     <img class="products__image" src="images/products/selfie-stick-amateur.png" width="360" height="380" alt="Любительская селфи-палка.">
-                    <button class="products__details" type="button">Подробнее</button>
+                    <a class="products__details" href="#">Подробнее</a>
                   </li>
                   <li class="products__item">
                     <div class="products__info">
-                      <h3 class="products__subtitle">Профессиональная селфи-палка</h3>
+                      <a class="products__link" href="#">
+                        <h3 class="products__subtitle">Профессиональная селфи-палка</h3>
+                      </a>
                       <span class="products__price">1 500 ₽</span>
                     </div>
                     <img class="products__image" src="images/products/selfie-stick-professional.png" width="360" height="380" alt="Профессиональная селфи-палка.">
-                    <button class="products__details" type="button">Подробнее</button>
+                    <a class="products__details" href="#">Подробнее</a>
                   </li>
                   <li class="products__item">
                     <div class="products__info">
-                      <h3 class="products__subtitle">Непотопляемая селфи-палка</h3>
+                      <a class="products__list" href="#">
+                        <h3 class="products__subtitle">Непотопляемая селфи-палка</h3>
+                      </a>
                       <span class="products__price">2 500 ₽</span>
                     </div>
                     <img class="products__image" src="images/products/selfie-stick-unsinkable.png" width="360" height="380" alt="Непотопляемая селфи-палка.">
-                    <button class="products__details" type="button">Подробнее</button>
+                    <a class="products__details" href="#">Подробнее</a>
                   </li>
                   <li class="products__item products__item--new">
                     <div class="products__info">
-                      <h3 class="products__subtitle">Селфи-палка «Следуй за мной»</h3>
+                      <a class="products__link" href="#">
+                        <h3 class="products__subtitle">Селфи-палка «Следуй за мной»</h3>
+                      </a>
                       <span class="products__price">4 900 ₽</span>
                     </div>
                     <img class="products__image" src="images/products/selfie-stick-follow-me.png" width="360" height="380" alt="Селфи-палка «Следуй за мной».">
-                    <button class="products__details" type="button">Подробнее</button>
+                    <a class="products__details" href="#">Подробнее</a>
                   </li>
                 </ul>
                 <button class="products__download" type="button">Загрузить еще</button>
@@ -239,7 +259,8 @@
                   </li>
                 </ul>
               </div>
-            </div>
+
+            </section>
           <!-- products end -->
 
         </div>

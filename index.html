@@ -22,6 +22,7 @@
 
           <nav class="header__navigation">
             <div class="header__top">
+
               <!-- header-search start -->
                 <form class="header-search header__search-form " action="https://echo.htmlacademy.ru" method="get">
                   <label class="header-search__label">
@@ -31,6 +32,7 @@
                   <button class="header-search__submit" type="submit">Найти</button>
                 </form>
               <!-- header-search end -->
+
                 <a class="header__top-link" href="#">Войти</a>
                 <a class="header__top-link" href="#">Сравнить</a>
                 <div class="header__top-block">
@@ -231,36 +233,32 @@
               <div class="container services__inner">
                 <h2 class="visually-hidden">Услуги</h2>
 
-                  <!-- services-menu start -->
-                    <ul class="services-menu__list">
-                      <li class="services-menu__item services-menu__item--active">
-                        <button class="services-menu__button" type="button">Доставка</button>
-                      </li>
-                      <li class="services-menu__item">
-                        <button class="services-menu__button" type="button">Гарантия</button>
-                      </li>
-                      <li class="services-menu__item">
-                        <button class="services-menu__button" type="button">Кредит</button>
-                      </li>
-                    </ul>
-                  <!-- services-menu end -->
+                  <ul class="services__menu-list">
+                    <li class="services__menu-item services__menu-item--active">
+                      <button class="services__menu-button" type="button">Доставка</button>
+                    </li>
+                    <li class="services__menu-item">
+                      <button class="services__menu-button" type="button">Гарантия</button>
+                    </li>
+                    <li class="services__menu-item">
+                      <button class="services__menu-button" type="button">Кредит</button>
+                    </li>
+                  </ul>
 
-                  <!-- services-description start -->
-                    <ul class="services-description__list">
-                      <li class="services-description__item services-description__item--current">
-                        <h3 class="services-description__subtitle">Доставка</h3>
-                        <p class="services-description__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                      </li>
-                      <li class="services-description__item">
-                        <h3 class="services-description__subtitle">Гарантия</h3>
-                        <p class="services-description__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-                      </li>
-                      <li class="services-description__item">
-                        <h3 class="services-description__subtitle">Кредит</h3>
-                        <p class="services-description__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-                      </li>
-                    </ul>
-                  <!-- services-description end -->
+                  <ul class="services__description-list">
+                    <li class="services__description-item services__description-item--current">
+                      <h3 class="services__description-subtitle">Доставка</h3>
+                      <p class="services__description-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                    </li>
+                    <li class="services__description-item">
+                      <h3 class="services__description-subtitle">Гарантия</h3>
+                      <p class="services__description-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                    </li>
+                    <li class="services__description-item">
+                      <h3 class="services__description-subtitle">Кредит</h3>
+                      <p class="services__description-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+                    </li>
+                  </ul>
 
               </div>
             </section>
@@ -277,7 +275,7 @@
             <div class="about-section container">
 
               <!-- about-us start -->
-                <div class="about-us">
+                <section class="about-us">
                   <h2 class="about-us__title">О нас</h2>
                   <p class="about-us__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
                   <p class="about-us__description"> Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
@@ -287,25 +285,25 @@
                     <li class="about-us__item">ТоксБерри</li>
                   </ul>
                   <a class="about-us__link link-effect" href="#">Подробнее о нас</a>
-                </div>
+                </section>
               <!-- about-us end -->
 
               <!-- contacts start -->
-                <div class="contacts">
+                <section class="contacts">
                   <h2 class="contacts__title">Контакты</h2>
-                    <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки. </p>
-                      <h3 class="contacts__subtitle">Интернет-магазин «Девайс»</h3>
-                      <address class="contacts__address">
-                        <p class="contacts__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-                        <a class="contacts__tel" href="tel:78128121212">+7 (812) 812-12-12</a>
-                      </address>
-                      <h3 class="contacts__subtitle">Время работы</h3>
-                      <ul class="contacts__list">
-                        <li class="contacts__item">пн—пт: с 10:00 до 22:00</li>
-                        <li class="contacts__item">сб—вс: с 10:00 до 19:00</li>
-                      </ul>
-                      <a class="contacts__link link-effect" href="#">Подробнее о нас</a>
-                </div>
+                  <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки. </p>
+                  <h3 class="contacts__subtitle">Интернет-магазин «Девайс»</h3>
+                  <address class="contacts__address">
+                    <p class="contacts__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                    <a class="contacts__tel" href="tel:78128121212">+7 (812) 812-12-12</a>
+                  </address>
+                  <h3 class="contacts__subtitle">Время работы</h3>
+                  <ul class="contacts__list">
+                    <li class="contacts__item">пн—пт: с 10:00 до 22:00</li>
+                    <li class="contacts__item">сб—вс: с 10:00 до 19:00</li>
+                  </ul>
+                  <a class="contacts__link link-effect" href="#">Подробнее о нас</a>
+                </section>
               <!-- contacts end -->
 
             </div>
