@@ -4,7 +4,6 @@
   <head>
     <title>HTML Academy: Девайс-каталог</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Описание контента">
     <meta name="keywords" content="Ключевые, слова, через, запятую">
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
@@ -18,7 +17,7 @@
         <div class="header__inner">
 
           <a class="header__logo-link" href="index.html">
-            <img class="header__logo-image" src="images/icons/device-header.svg" width="145" height="36" alt="Логотип интернет магазина 'Device'.">
+            <img class="header__logo-image" src="images/device-header.svg" width="145" height="36" alt="Логотип интернет магазина 'Device'.">
           </a>
 
           <nav class="header__navigation">
@@ -42,11 +41,11 @@
                     <div class="header__top-basket">
                       <ul class="header__top-basket-list">
                         <li class="header__top-basket-item">
-                          <img class="header__top-basket-image" src="images/header/selfie-stick-amateur-basket.png" width="41" height="43" alt="Любительская селфи-палка.">
+                          <img class="header__top-basket-image" src="images/selfie-stick-amateur-basket.png" width="41" height="43" alt="Любительская селфи-палка.">
                           <a class="header__top-basket-link" href="#">Любительская селфи-палка</a>
                         </li>
                         <li class="header__top-basket-item">
-                          <img class="header__top-basket-image" src="images/header/selfie-stick-professional-basket.png" width="41" height="43" alt="Профессиональная селфи-палка.">
+                          <img class="header__top-basket-image" src="images/selfie-stick-professional-basket.png" width="41" height="43" alt="Профессиональная селфи-палка.">
                           <a class="header__top-basket-link" href="#">Профессиональная селфи-палка</a>
                         </li>
                       </ul>
@@ -128,11 +127,13 @@
               <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
                 <fieldset class="filters__field">
                   <legend class="filters__subtitle">Стоимость</legend>
-                  <label class="filters__label" for="value-after">
-                    <input class="filters__number" id="value-after" type="number" name="min" value="0">
+                  <label class="filters__label">
+                    <input class="filters__number" type="number" name="min" value="0">
+                    <span class="visually-hidden">от</span>
                   </label>
-                  <label class="filters__label" for="value-before">
-                    <input class="filters__number" id="value-before" type="number" name="max" value="5000">
+                  <label class="filters__label">
+                    <input class="filters__number" type="number" name="max" value="5000">
+                    <span class="visually-hidden">до</span>
                   </label>
                 </fieldset>
                 <fieldset class="filters__field">
@@ -189,9 +190,9 @@
                     <a class="products__popular-first" href="#popular-first">Сначала популярные</a>
                     <ul class="products__sort-list">
                       <li class="products__sort-item">
-                        <a class="visually-hidden" href="#"></a>
-                        <a class="visually-hidden" href="#"></a>
-                        <a class="visually-hidden" href="#"></a>
+                        <a class="products__sort-link" href="#"></a>
+                        <a class="products__sort-link" href="#"></a>
+                        <a class="products__sort-link" href="#"></a>
                       </li>
                     </ul>
                   </div>
@@ -206,42 +207,42 @@
                 <ul class="products__list">
                   <li class="products__item">
                     <div class="products__info">
-                      <h3 class="products__subtitle">
-                        <a class="products__link" href="#">Любительская селфи-палка</a>
-                      </h3>
+                      <h3 class="products__subtitle">Любительская селфи-палка</h3>
                       <span class="products__price">500 ₽</span>
                     </div>
-                    <img class="products__image" src="images/products/selfie-stick-amateur.png" width="360" height="380" alt="Любительская селфи-палка.">
+                    <a class="products__link" href="#">
+                      <img class="products__image" src="images/selfie-stick-amateur.png" width="360" height="380" alt="Любительская селфи-палка.">
+                    </a>
                     <a class="products__details" href="#">Подробнее</a>
                   </li>
                   <li class="products__item">
                     <div class="products__info">
-                      <h3 class="products__subtitle">
-                        <a class="products__link" href="#">Профессиональная селфи-палка</a>
-                      </h3>
+                      <h3 class="products__subtitle">Профессиональная селфи-палка</h3>
                       <span class="products__price">1 500 ₽</span>
                     </div>
-                    <img class="products__image" src="images/products/selfie-stick-professional.png" width="360" height="380" alt="Профессиональная селфи-палка.">
+                    <a class="products__link" href="#">
+                      <img class="products__image" src="images/selfie-stick-professional.png" width="360" height="380" alt="Профессиональная селфи-палка.">
+                    </a>
                     <a class="products__details" href="#">Подробнее</a>
                   </li>
                   <li class="products__item">
                     <div class="products__info">
-                      <h3 class="products__subtitle">
-                        <a class="products__list" href="#">Непотопляемая селфи-палка</a>
-                      </h3>
+                      <h3 class="products__subtitle">Непотопляемая селфи-палка</h3>
                       <span class="products__price">2 500 ₽</span>
                     </div>
-                    <img class="products__image" src="images/products/selfie-stick-unsinkable.png" width="360" height="380" alt="Непотопляемая селфи-палка.">
+                    <a class="products__link" href="#">
+                      <img class="products__image" src="images/selfie-stick-unsinkable.png" width="360" height="380" alt="Непотопляемая селфи-палка.">
+                    </a>
                     <a class="products__details" href="#">Подробнее</a>
                   </li>
                   <li class="products__item products__item--new">
                     <div class="products__info">
-                      <h3 class="products__subtitle">
-                        <a class="products__link" href="#">Селфи-палка «Следуй за мной»</a>
-                      </h3>
+                      <h3 class="products__subtitle">Селфи-палка «Следуй за мной»</h3>
                       <span class="products__price">4 900 ₽</span>
                     </div>
-                    <img class="products__image" src="images/products/selfie-stick-follow-me.png" width="360" height="380" alt="Селфи-палка «Следуй за мной».">
+                    <a class="products__link" href="#">
+                      <img class="products__image" src="images/selfie-stick-follow-me.png" width="360" height="380" alt="Селфи-палка «Следуй за мной».">
+                    </a>
                     <a class="products__details" href="#">Подробнее</a>
                   </li>
                 </ul>
@@ -276,7 +277,7 @@
         <div class="footer__inner container">
 
           <a class="footer__logo-link">
-            <img class="footer__logo-image" src="images/icons/device-footer.svg" width="145" height="36" alt="Логотип интернет магазина 'Device'.">
+            <img class="footer__logo-image" src="images/device-footer.svg" width="145" height="36" alt="Логотип интернет магазина 'Device'.">
           </a>
 
           <div class="footer__navigation">
@@ -314,7 +315,7 @@
           </ul>
 
           <a class="footer__htmlacademy-link" href="https://htmlacademy.ru">
-            <img class="footer__htmlacademy-image" src="images/icons/logo-htmlacademy-footer.svg" width="115" height="34" alt="Логотип 'htmlacademy.">
+            <img class="footer__htmlacademy-image" src="images/logo-htmlacademy-footer.svg" width="115" height="34" alt="Логотип 'htmlacademy.">
           </a>
 
         </div>
