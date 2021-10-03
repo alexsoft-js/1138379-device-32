@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Описание контента">
     <meta name="keywords" content="Ключевые, слова, через, запятую">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -16,8 +17,8 @@
       <header class="header container">
         <div class="header__inner">
 
-          <a class="header__logo-link">
-            <img class="header__logo-image" src="images/header-logo/header-logo.svg" width="145" height="36" alt="Логотип интернет магазина 'Device'.">
+          <a class="header__logo-link" href="index.html">
+            <img class="header__logo-image" src="images/icons/device-header.svg" width="145" height="36" alt="Логотип интернет магазина 'Device'.">
           </a>
 
           <nav class="header__navigation">
@@ -41,11 +42,11 @@
                     <div class="header__top-basket">
                       <ul class="header__top-basket-list">
                         <li class="header__top-basket-item">
-                          <img class="header__top-basket-image" src="#" width="41" height="43" alt="Любительская селфи-палка.">
+                          <img class="header__top-basket-image" src="images/header/selfie-stick-amateur-basket.png" width="41" height="43" alt="Любительская селфи-палка.">
                           <a class="header__top-basket-link" href="#">Любительская селфи-палка</a>
                         </li>
                         <li class="header__top-basket-item">
-                          <img class="header__top-basket-image" src="#" width="41" height="43" alt="Профессиональная селфи-палка.">
+                          <img class="header__top-basket-image" src="images/header/selfie-stick-professional-basket.png" width="41" height="43" alt="Профессиональная селфи-палка.">
                           <a class="header__top-basket-link" href="#">Профессиональная селфи-палка</a>
                         </li>
                       </ul>
@@ -127,11 +128,11 @@
               <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
                 <fieldset class="filters__field">
                   <legend class="filters__subtitle">Стоимость</legend>
-                  <label class="filters__label">
-                    <input class="filters__number" type="number" name="min" value="0">
+                  <label class="filters__label" for="value-after">
+                    <input class="filters__number" id="value-after" type="number" name="min" value="0">
                   </label>
-                  <label class="filters__label">
-                    <input class="filters__number" type="number" name="max" value="5000">
+                  <label class="filters__label" for="value-before">
+                    <input class="filters__number" id="value-before" type="number" name="max" value="5000">
                   </label>
                 </fieldset>
                 <fieldset class="filters__field">
@@ -275,7 +276,7 @@
         <div class="footer__inner container">
 
           <a class="footer__logo-link">
-            <img class="footer__logo-image" src="images/footer-logo/footer-logo.svg" width="145" height="36" alt="Логотип интернет магазина 'Device'.">
+            <img class="footer__logo-image" src="images/icons/device-footer.svg" width="145" height="36" alt="Логотип интернет магазина 'Device'.">
           </a>
 
           <div class="footer__navigation">
@@ -312,8 +313,8 @@
             </li>
           </ul>
 
-          <a class="footer__htmlacademy-link" href="#">
-            <img class="footer__htmlacademy-image" src="images/footer-logo/footer-htmlacademy.svg" width="115" height="34" alt="Логотип 'htmlacademy.">
+          <a class="footer__htmlacademy-link" href="https://htmlacademy.ru">
+            <img class="footer__htmlacademy-image" src="images/icons/logo-htmlacademy-footer.svg" width="115" height="34" alt="Логотип 'htmlacademy.">
           </a>
 
         </div>
