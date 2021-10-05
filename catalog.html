@@ -53,14 +53,14 @@
                         <p class="header__top-basket-text">Товаров: 2</p>
                         <p class="header__top-basket-text">Сумма: 2000 ₽</p>
                       </div>
-                      <a class="header__top-basket-open">Открыть корзину</a>
+                      <a class="header__top-basket-open link">Открыть корзину</a>
                     </div>
                 </div>
             </div>
 
             <ul class="header__bottom-list">
               <li class="header__bottom-item">
-                <a class="header__bottom-link" href="catalog.html">Каталог товаров</a>
+                <a class="header__bottom-link link" href="catalog.html">Каталог товаров</a>
                   <ul class="header__button-catalog-list">
                     <li class="header__button-catalog-item">
                       <a class="header__button-catalog-link" href="#">Виртуальная реальность</a>
@@ -83,13 +83,13 @@
                   </ul>
               </li>
               <li class="header__bottom-item">
-                <a class="header__bottom-link" href="#">Доставка</a>
+                <a class="header__bottom-link link" href="#">Доставка</a>
               </li>
               <li class="header__bottom-item">
-                <a class="header__bottom-link" href="#">Гарантия</a>
+                <a class="header__bottom-link link" href="#">Гарантия</a>
               </li>
               <li class="header__bottom-item">
-                <a class="header__bottom-link" href="#">Контакты</a>
+                <a class="header__bottom-link link" href="#">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -103,7 +103,7 @@
         <h1 class="visually-hidden">Каталог интернет магазина 'Device'</h1>
 
         <section class="main__container">
-          <h2 class="main__title">Моноподы для селфи</h2>
+          <h2 class="main__title title">Моноподы для селфи</h2>
           <ul class="main__list">
             <li class="main__item">
               <a class="main__link" href="#">Главная</a>
@@ -111,7 +111,9 @@
             <li class="main__item">
               <a class="main__link" href="#">Каталог товаров</a>
             </li>
-            <li class="main__item">Моноподы для селфи</li>
+            <li class="main__item">
+              <span class="main__text">Моноподы для селфи</span>
+            </li>
           </ul>
         </section>
 
@@ -121,60 +123,66 @@
             <section class="filters">
 
               <div class="filters__top">
-                <h2 class="filters__title">Фильтр:</h2>
+                <h2 class="filters__title link">Фильтр:</h2>
               </div>
 
               <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
-                <fieldset class="filters__field">
-                  <legend class="filters__subtitle">Стоимость</legend>
-                  <label class="filters__label">
-                    <input class="filters__number" type="number" name="min" value="0">
-                    <span class="visually-hidden">от</span>
-                  </label>
-                  <label class="filters__label">
-                    <input class="filters__number" type="number" name="max" value="5000">
-                    <span class="visually-hidden">до</span>
-                  </label>
-                </fieldset>
-                <fieldset class="filters__field">
-                  <legend class="filters__subtitle">Цвет</legend>
-                  <ul class="filters__list">
-                    <li class="filters__item">
-                      <input class="visually-hidden" type="checkbox" name="color-black" id="black" checked>
-                      <label class="filters__checked" for="black">Черный</label>
-                    </li>
-                    <li class="filters__item">
-                      <input class="visually-hidden" type="checkbox" name="color-white" id="white" checked>
-                      <label class="filters__checked" for="white">Белый</label>
-                    </li>
-                    <li class="filters__item">
-                      <input class="visually-hidden" type="checkbox" name="color-blue" id="blue">
-                      <label class="filters__checked" for="blue">Синий</label>
-                    </li>
-                    <li class="filters__item">
-                      <input class="visually-hidden" type="checkbox" name="color-red" id="red">
-                      <label class="filters__checked" for="red">Красный</label>
-                    </li>
-                    <li class="filters__item">
-                      <input class="visually-hidden" type="checkbox" name="color-pink" id="pink">
-                      <label class="filters__checked" for="pink">Розовый</label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <fieldset class="filters__field">
-                  <legend class="filters__subtitle">Bluetooth</legend>
+                <div class="filters__block">
+                  <fieldset class="filters__field">
+                    <legend class="filters__subtitle">Стоимость</legend>
+                    <label class="filters__label">
+                      <input class="filters__number" type="number" name="min" value="0">
+                      <span class="visually-hidden">от</span>
+                    </label>
+                    <label class="filters__label">
+                      <input class="filters__number" type="number" name="max" value="5000">
+                      <span class="visually-hidden">до</span>
+                    </label>
+                  </fieldset>
+                </div>
+                <div class="filters__block">
+                  <fieldset class="filters__field">
+                    <legend class="filters__subtitle">Цвет</legend>
                     <ul class="filters__list">
                       <li class="filters__item">
-                        <input class="visually-hidden" type="radio" name="bluetooth" id="bluetooth-true" value="true" checked>
-                        <label class="filters__radio" for="bluetooth-true">Есть</label>
+                        <input class="visually-hidden" type="checkbox" name="color-black" id="black" checked>
+                        <label class="filters__checked" for="black">Черный</label>
                       </li>
                       <li class="filters__item">
-                        <input class="visually-hidden" type="radio" name="bluetooth" id="bluetooth-false" value="false">
-                        <label class="filters__radio" for="bluetooth-false">Нет</label>
+                        <input class="visually-hidden" type="checkbox" name="color-white" id="white" checked>
+                        <label class="filters__checked" for="white">Белый</label>
+                      </li>
+                      <li class="filters__item">
+                        <input class="visually-hidden" type="checkbox" name="color-blue" id="blue">
+                        <label class="filters__checked" for="blue">Синий</label>
+                      </li>
+                      <li class="filters__item">
+                        <input class="visually-hidden" type="checkbox" name="color-red" id="red">
+                        <label class="filters__checked" for="red">Красный</label>
+                      </li>
+                      <li class="filters__item">
+                        <input class="visually-hidden" type="checkbox" name="color-pink" id="pink">
+                        <label class="filters__checked" for="pink">Розовый</label>
                       </li>
                     </ul>
-                </fieldset>
-                <button class="filters__submit" type="submit">Показать</button>
+                  </fieldset>
+                </div>
+                <div class="filters__block">
+                  <fieldset class="filters__field">
+                    <legend class="filters__subtitle">Bluetooth</legend>
+                      <ul class="filters__list">
+                        <li class="filters__item">
+                          <input class="visually-hidden" type="radio" name="bluetooth" id="bluetooth-true" value="true" checked>
+                          <label class="filters__radio" for="bluetooth-true">Есть</label>
+                        </li>
+                        <li class="filters__item">
+                          <input class="visually-hidden" type="radio" name="bluetooth" id="bluetooth-false" value="false">
+                          <label class="filters__radio" for="bluetooth-false">Нет</label>
+                        </li>
+                      </ul>
+                  </fieldset>
+                </div>
+                <button class="filters__submit link link-effect" type="submit">Показать</button>
               </form>
 
             </section>
@@ -185,7 +193,7 @@
               <h2 class="visually-hidden">Каталог товаров</h2>
 
                 <section class="products__top">
-                  <h2 class="products__title">Сортировка:</h2>
+                  <h2 class="products__title link">Сортировка:</h2>
                   <div class="products__block">
                     <a class="products__popular-first" href="#popular-first">Сначала популярные</a>
                     <ul class="products__sort-list">
@@ -213,7 +221,7 @@
                     <a class="products__link" href="#">
                       <img class="products__image" src="images/selfie-stick-amateur.png" width="360" height="380" alt="Любительская селфи-палка.">
                     </a>
-                    <a class="products__details" href="#">Подробнее</a>
+                    <a class="products__details link link-effect" href="#">Подробнее</a>
                   </li>
                   <li class="products__item">
                     <div class="products__info">
@@ -223,7 +231,7 @@
                     <a class="products__link" href="#">
                       <img class="products__image" src="images/selfie-stick-professional.png" width="360" height="380" alt="Профессиональная селфи-палка.">
                     </a>
-                    <a class="products__details" href="#">Подробнее</a>
+                    <a class="products__details link link-effect" href="#">Подробнее</a>
                   </li>
                   <li class="products__item">
                     <div class="products__info">
@@ -233,7 +241,7 @@
                     <a class="products__link" href="#">
                       <img class="products__image" src="images/selfie-stick-unsinkable.png" width="360" height="380" alt="Непотопляемая селфи-палка.">
                     </a>
-                    <a class="products__details" href="#">Подробнее</a>
+                    <a class="products__details link link-effect" href="#">Подробнее</a>
                   </li>
                   <li class="products__item products__item--new">
                     <div class="products__info">
@@ -243,14 +251,14 @@
                     <a class="products__link" href="#">
                       <img class="products__image" src="images/selfie-stick-follow-me.png" width="360" height="380" alt="Селфи-палка «Следуй за мной».">
                     </a>
-                    <a class="products__details" href="#">Подробнее</a>
+                    <a class="products__details link link-effect" href="#">Подробнее</a>
                   </li>
                 </ul>
-                <button class="products__download" type="button">Загрузить еще</button>
+                <button class="products__download link" type="button">Загрузить еще</button>
 
                 <div class="products__pagination">
-                  <a class="products__pagination-button" href="#">Назад</a>
-                  <a class="products__pagination-button" href="#">Вперед</a>
+                  <a class="products__pagination-button link" href="#">Назад</a>
+                  <a class="products__pagination-button link" href="#">Вперед</a>
                   <ul class="products__pagination-list">
                     <li class="products__pagination-item">
                       <a class="products__pagination-link products__pagination-link--current" href="#">1</a>
