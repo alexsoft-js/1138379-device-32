@@ -33,10 +33,10 @@
                 </form>
               <!-- header-search end -->
 
-                <a class="header__top-link" href="#">Войти</a>
-                <a class="header__top-link" href="#">Сравнить</a>
+                <a class="header__top-link header__top-link--user" href="#">Войти</a>
+                <a class="header__top-link header__top-link--compare" href="#">Сравнить</a>
                 <div class="header__top-block">
-                  <a class="header__top-link" href="#">Корзина</a>
+                  <a class="header__top-link header__top-link--basket" href="#">Корзина</a>
 
                     <!-- header__top-basket start -->
                       <div class="header__top-basket">
@@ -64,24 +64,24 @@
             <ul class="header__bottom-list">
               <li class="header__bottom-item">
                 <a class="header__bottom-link link" href="catalog.html">Каталог товаров</a>
-                  <ul class="header__button-catalog-list">
-                    <li class="header__button-catalog-item">
-                      <a class="header__button-catalog-link" href="#">Виртуальная реальность</a>
+                  <ul class="header__bottom-catalog-list">
+                    <li class="header__bottom-catalog-item">
+                      <a class="header__bottom-catalog-link" href="#">Виртуальная реальность</a>
                     </li>
-                    <li class="header__button-catalog-item">
-                      <a class="header__button-catalog-link" href="#">Моноподы для cелфи</a>
+                    <li class="header__bottom-catalog-item">
+                      <a class="header__bottom-catalog-link" href="#">Моноподы для cелфи</a>
                     </li>
-                    <li class="header__button-catalog-item">
-                      <a class="header__button-catalog-link" href="#">Экшн-камеры</a>
+                    <li class="header__bottom-catalog-item">
+                      <a class="header__bottom-catalog-link" href="#">Экшн-камеры</a>
                     </li>
-                    <li class="header__button-catalog-item">
-                      <a class="header__button-catalog-link" href="#">Фитнес-браслеты</a>
+                    <li class="header__bottom-catalog-item">
+                      <a class="header__bottom-catalog-link" href="#">Фитнес-браслеты</a>
                     </li>
-                    <li class="header__button-catalog-item">
-                      <a class="header__button-catalog-link" href="#">Умные часы</a>
+                    <li class="header__bottom-catalog-item">
+                      <a class="header__bottom-catalog-link" href="#">Умные часы</a>
                     </li>
-                    <li class="header__button-catalog-item">
-                      <a class="header__button-catalog-link" href="#">Квадрокоптеры</a>
+                    <li class="header__bottom-catalog-item">
+                      <a class="header__bottom-catalog-link" href="#">Квадрокоптеры</a>
                     </li>
                   </ul>
               </li>
@@ -117,16 +117,20 @@
                     <div class="promo-slider__description">
                       <h3 class="promo-slider__subtitle title">Порхает как бабочка, жалит как пчела!</h3>
                       <p class="promo-slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                      <a class="promo-slider__link link link-effect" href="#">Подробнее</a>
-                      <dl class="promo-slider__list">
-                        <dt class="promo-slider__term">800 м</dt>
-                        <dd class="promo-slider__definition">Дальность полета</dd>
-                        <dt class="promo-slider__term">50 м</dt>
-                        <dd class="promo-slider__definition">Радиус поражения</dd>
+                      <a class="promo-slider__link link link--effect" href="#">Подробнее</a>
+                      <dl class="promo-slider__term-list">
+                        <div class="promo-slider__term-block">
+                          <dt class="promo-slider__term-description">800 м</dt>
+                          <dd class="promo-slider__term-definition">Дальность полета</dd>
+                        </div>
+                        <div class="promo-slider__term-block">
+                          <dt class="promo-slider__term-description">50 м</dt>
+                          <dd class="promo-slider__term-definition">Радиус поражения</dd>
+                        </div>
                       </dl>
                     </div>
                   </li>
-                  <li class="promo-slider__item promo-slider__item--current">
+                  <li class="promo-slider__item">
                     <div class="promo-slider__images">
                       <img class="promo-slider__image" src="images/fitness-bracelets.png" width="560" height="560" alt="Фитнес-браслет.">
                     </div>
@@ -134,13 +138,15 @@
                       <h3 class="promo-slider__subtitle title">Худеем правильно!</h3>
                       <p class="promo-slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                       <a class="promo-slider__link link link-effect" href="#">Подробнее</a>
-                      <dl class="promo-slider__list">
-                        <dt class="promo-slider__term">48 часов</dt>
-                        <dd class="promo-slider__definition">Без подзарядки</dd>
+                      <dl class="promo-slider__term-list">
+                        <div class="promo-slider__term-block">
+                          <dt class="promo-slider__term-description">48 часов</dt>
+                          <dd class="promo-slider__term-definition">Без подзарядки</dd>
+                        </div>
                       </dl>
                     </div>
                   </li>
-                  <li class="promo-slider__item promo-slider__item--current">
+                  <li class="promo-slider__item">
                     <div class="promo-slider__images">
                       <img class="promo-slider__image" src="images/selfie-stick.png" width="560" height="560" alt="Селфи-палка.">
                     </div>
@@ -148,13 +154,19 @@
                       <h3 class="promo-slider__subtitle title">Делай селфи, как Бен Стиллер! </h3>
                       <p class="promo-slider__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
                       <a class="promo-slider__link link link-effect" href="#">Подробнее</a>
-                      <dl class="promo-slider__list">
-                        <dt class="promo-slider__term">8,5 м</dt>
-                        <dd class="promo-slider__definition">Длина палки</dd>
-                        <dt class="promo-slider__term">5 кг</dt>
-                        <dd class="promo-slider__definition">Вес палки</dd>
-                        <dt class="promo-slider__term">Карбон</dt>
-                        <dd class="promo-slider__definition">Материал</dd>
+                      <dl class="promo-slider__term-list">
+                        <div class="promo-slider__term-block">
+                          <dt class="promo-slider__term-description">8,5 м</dt>
+                          <dd class="promo-slider__term-definition">Длина палки</dd>
+                        </div>
+                        <div class="promo-slider__term-block">
+                          <dt class="promo-slider__term-description">5 кг</dt>
+                          <dd class="promo-slider__term-definition">Вес палки</dd>
+                        </div>
+                        <div class="promo-slider__term-block">
+                          <dt class="promo-slider__term-description">Карбон</dt>
+                          <dd class="promo-slider__term-definition">Материал</dd>
+                        </div>
                       </dl>
                     </div>
                   </li>
@@ -167,19 +179,19 @@
                   <span class="visually-hidden">Следующий слайд.</span>
                 </button>
 
-                  <ul class="promo-slider__list">
-                    <li class="promo-slider__point promo-slider__point--active">
-                      <button class="promo-slider__button" type="button">
+                  <ul class="promo-slider__point-list">
+                    <li class="promo-slider__point-item">
+                      <button class="promo-slider__point-button promo-slider__point-button--active" type="button">
                         <span class="visually-hidden">Первый слайд.</span>
                       </button>
                     </li>
-                    <li class="promo-slider__point">
-                      <button class="promo-slider__button" type="button">
+                    <li class="promo-slider__point-item">
+                      <button class="promo-slider__point-button" type="button">
                         <span class="visually-hidden">Второй слайд.</span>
                       </button>
                     </li>
-                    <li class="promo-slider__point">
-                      <button class="promo-slider__button" type="button">
+                    <li class="promo-slider__point-item">
+                      <button class="promo-slider__point-button" type="button">
                         <span class="visually-hidden">Третий слайд.</span>
                       </button>
                     </li>
@@ -194,39 +206,39 @@
                 <ul class="goods__list">
                   <li class="goods__item">
                     <a class="goods__link" href="#">
-                      <img class="goods__image" src="images/virtual-reality.svg" width="160" height="160" alt="Виртуальная реальность.">
-                      <span class="goods__text">Виртуальная реальность</span>
+                      <img class="goods__image goods__image--virtual-reality" src="images/virtual-reality.svg" width="97" height="55" alt="Виртуальная реальность.">
                     </a>
+                    <span class="goods__text">Виртуальная реальность</span>
                   </li>
                   <li class="goods__item">
                     <a class="goods__link" href="#">
-                      <img class="goods__image" src="images/monopods-for-selfie.svg" width="160" height="160" alt="Моноподы для селфи.">
-                      <span class="goods__text">Моноподы для селфи</span>
+                      <img class="goods__image goods__image--monopods-for-selfie" src="images/monopods-for-selfie.svg" width="86" height="117" alt="Моноподы для селфи.">
                     </a>
+                    <span class="goods__text">Моноподы <br /> для селфи</span>
                   </li>
                   <li class="goods__item">
                     <a class="goods__link" href="#">
-                      <img class="goods__image" src="images/action-cameras.svg" width="160" height="160" alt="Экшн-камеры.">
-                      <span class="goods__text">Экшн-камеры</span>
+                      <img class="goods__image goods__image--action-cameras" src="images/action-cameras.svg" width="71" height="87" alt="Экшн-камеры.">
                     </a>
+                    <span class="goods__text">Экшн-камеры</span>
                   </li>
                   <li class="goods__item">
                     <a class="goods__link" href="#">
-                      <img class="goods__image" src="images/fitness-bracelets.svg" width="160" height="160" alt="Фитнес-браслеты.">
-                      <span class="goods__text">Фитнес-браслеты</span>
+                      <img class="goods__image goods__image--fitness-bracelets" src="images/fitness-bracelets.svg" width="107" height="65" alt="Фитнес-браслеты.">
                     </a>
+                    <span class="goods__text">Фитнес-браслеты</span>
                   </li>
                   <li class="goods__item">
                     <a class="goods__link" href="#">
-                      <img class="goods__image" src="images/smart-watch.svg" width="160" height="160" alt="Умные часы.">
-                      <span class="goods__text">Умные часы</span>
+                      <img class="goods__image goods__image--smart-watch" src="images/smart-watch.svg" width="56" height="98" alt="Умные часы.">
                     </a>
+                    <span class="goods__text">Умные часы</span>
                   </li>
                   <li class="goods__item">
                     <a class="goods__link" href="#">
-                      <img class="goods__image" src="images/quadrocopters.svg" width="160" height="160" alt="Квадрокоптеры.">
-                      <span class="goods__text">Квадрокоптеры</span>
+                      <img class="goods__image goods__image--quadrocopters" src="images/quadrocopters.svg" width="132" height="69" alt="Квадрокоптеры.">
                     </a>
+                    <span class="goods__text">Квадрокоптеры</span>
                   </li>
                 </ul>
             </section>
@@ -239,20 +251,20 @@
 
                   <ul class="services__menu-list">
                     <li class="services__menu-item services__menu-item--active">
-                      <button class="services__menu-button link link-effect" type="button">Доставка</button>
+                      <button class="services__menu-button link link--effect" type="button">Доставка</button>
                     </li>
                     <li class="services__menu-item">
-                      <button class="services__menu-button link link-effect" type="button">Гарантия</button>
+                      <button class="services__menu-button link link--effect" type="button">Гарантия</button>
                     </li>
                     <li class="services__menu-item">
-                      <button class="services__menu-button link link-effect" type="button">Кредит</button>
+                      <button class="services__menu-button link link--effect" type="button">Кредит</button>
                     </li>
                   </ul>
 
                   <ul class="services__description-list">
                     <li class="services__description-item services__description-item--current">
                       <h3 class="services__description-subtitle title">Доставка</h3>
-                      <p class="services__description-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                      <p class="services__description-text">Мы с удовольствием доставим ваш товар прямо <br /> к вашему подъезду совершенно бесплатно! Ведь <br /> мы неплохо заработаем, поднимая его на ваш этаж.</p>
                     </li>
                     <li class="services__description-item">
                       <h3 class="services__description-subtitle title">Гарантия</h3>
@@ -271,7 +283,7 @@
           <!-- rare-commodity start -->
             <section class="rare-commodity container">
               <h2 class="visually-hidden">Доставка товара</h2>
-              <a class="rare-commodity__link" href="#">Доставим редкий товар под заказ</a>
+              <a class="rare-commodity__link link" href="#">Доставим редкий товар под заказ</a>
             </section>
           <!-- rare-commodity end -->
 
@@ -281,24 +293,24 @@
               <!-- about-us start -->
                 <section class="about-us">
                   <h2 class="about-us__title title">О нас</h2>
-                  <p class="about-us__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-                  <p class="about-us__description"> Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+                  <p class="about-us__description">Огромный выбор гаджетов не оставит равнодушным <br /> гика, который есть в каждом из нас.</p>
+                  <p class="about-us__description"> Мы можем доставить ваш товар в самые отдалённые <br /> уголки России транспортными компаниями:</p>
                   <ul class="about-us__list">
                     <li class="about-us__item">Меловые линии</li>
                     <li class="about-us__item">СДИК</li>
                     <li class="about-us__item">ТоксБерри</li>
                   </ul>
-                  <a class="about-us__link link link-effect" href="#">Подробнее о нас</a>
+                  <a class="about-us__link link link--effect" href="#">Подробнее о нас</a>
                 </section>
               <!-- about-us end -->
 
               <!-- contacts start -->
                 <section class="contacts">
                   <h2 class="contacts__title title">Контакты</h2>
-                  <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки. </p>
+                  <p class="contacts__description">Вы можете забрать товар сами, заехав в наш офис. <br /> Заодно сможете проверить работоспособность покупки. </p>
                   <h3 class="contacts__subtitle">Интернет-магазин «Девайс»</h3>
                   <address class="contacts__address">
-                    <p class="contacts__text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                    <p class="contacts__address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
                     <a class="contacts__tel" href="tel:78128121212">+7 (812) 812-12-12</a>
                   </address>
                   <h3 class="contacts__subtitle">Время работы</h3>
@@ -306,7 +318,7 @@
                     <li class="contacts__item">пн—пт: с 10:00 до 22:00</li>
                     <li class="contacts__item">сб—вс: с 10:00 до 19:00</li>
                   </ul>
-                  <a class="contacts__link link link-effect" href="#">Напишите нам</a>
+                  <a class="contacts__link link link--effect" href="#">Напишите нам</a>
                 </section>
               <!-- contacts end -->
 
@@ -317,8 +329,8 @@
             <section class="distribution">
               <div class="distribution__inner container">
                 <div class="distribution__top">
-                  <h2 class="distribution__title title">Подпишитесь на рассылку</h2>
-                  <p class="distribution__description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+                  <h2 class="distribution__title title">Подпишитесь <br /> на рассылку</h2>
+                  <p class="distribution__description">Еженедельный дайджест с обзорами новинок, <br /> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
                 </div>
                 <div class="distribution__bottom">
                   <form class="distribution__form" action="https://echo.htmlacademy.ru" method="post">
@@ -346,7 +358,7 @@
           </a>
 
           <div class="footer__navigation">
-            <p class="footer__navigation-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <p class="footer__navigation-text">Санкт-Петербург, набережная <br /> реки Карповки, 5, литера П.</p>
             <ul class="footer__navigation-list">
               <li class="footer__navigation-item">
                 <a class="footer__navigation-link link" href="#">Доставка</a>
@@ -361,27 +373,30 @@
             <a class="footer__navigation-tel" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
           </div>
 
-          <ul class="footer__social">
-            <li class="footer__social-item">
-              <a class="footer__social-link" href="https://www.facebook.com/htmlacademy">
-                <span class="visually-hidden">Фэйсбук.</span>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a class="footer__social-link" href="https://www.instagram.com/htmlacademy">
-                <span class="visually-hidden">Инстаграм.</span>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a class="footer__social-link" href="https://www.twitter.com/htmlacademy_ru">
-                <span class="visually-hidden">Твиттер.</span>
-              </a>
-            </li>
-          </ul>
+          <div class="footer__social-block">
+            
+            <ul class="footer__social">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="https://www.facebook.com/htmlacademy">
+                  <span class="visually-hidden">Фэйсбук.</span>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="https://www.instagram.com/htmlacademy">
+                  <span class="visually-hidden">Инстаграм.</span>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="https://www.twitter.com/htmlacademy_ru">
+                  <span class="visually-hidden">Твиттер.</span>
+                </a>
+              </li>
+            </ul>
 
-          <a class="footer__htmlacademy-link" href="https://htmlacademy.ru">
-            <img class="footer__htmlacademy-image" src="images/logo-htmlacademy-footer.svg" width="115" height="34" alt="Логотип 'htmlacademy.">
-          </a>
+            <a class="footer__htmlacademy-link" href="https://htmlacademy.ru">
+              <img class="footer__htmlacademy-image" src="images/logo-htmlacademy-footer.svg" width="115" height="34" alt="Логотип 'htmlacademy.">
+            </a>
+          </div>
 
         </div>
       </footer>

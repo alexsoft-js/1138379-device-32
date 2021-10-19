@@ -1,11 +1,11 @@
-/* fonts */
+/* fonts start */
 @font-face {
   font-style: normal;
   font-weight: 400;
   font-family: "Rubik";
 
   font-display: swap;
-  src: url("../fonts/rubik/rubik-400.woff2") format("woff2;");
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
 }
 
 @font-face {
@@ -14,7 +14,7 @@
   font-family: "Rubik";
 
   font-display: swap;
-  src: url("../fonts/rubik/rubik-700.woff2") format("woff2;");
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
 }
 
 @font-face {
@@ -23,7 +23,7 @@
   font-family: "Rubik";
 
   font-display: swap;
-  src: url("../fonts/rubik/rubik-800.woff2") format("woff2;");
+  src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
 }
 
 @font-face {
@@ -32,10 +32,11 @@
   font-family: "Raleway";
 
   font-display: swap;
-  src: url("../fonts/raleway/raleway-800.woff2") format("woff2;");
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
 }
+/* fonts end */
 
-/* variables */
+/* variables start */
 :root {
   --additional-jasmine: #ffe17f;
   --additional-lavender-indigo: #af4fff;
@@ -51,18 +52,25 @@
   --status-deep-saffron: #fd912e;
   --status-luck-green: #08af00;
 }
+/* variables end */
 
-/* global-elements */
+/* global-elements start */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   margin: 0;
 
-  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   font-family: "Rubik", sans-serif;
@@ -81,17 +89,6 @@ button {
   cursor: pointer;
 }
 
-.page a {
-  text-decoration: none;
-}
-
-.page ul {
-  margin: 0;
-  padding: 0;
-
-  list-style-type: none;
-}
-
 .visually-hidden {
   position: absolute;
 
@@ -103,6 +100,15 @@ button {
   border: 0;
 
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+.page {
+  margin-top: 40px;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .title {
@@ -119,19 +125,46 @@ button {
   font-family: "Raleway", sans-serif;
   color: var(--basic-black);
   text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 0.2em;
 }
 
-.link-effect {
+.link--effect {
   background-color: var(--additional-supernova);
 }
-/* header*/
+/* global-elements end */
+
+/* header start */
 .header__inner {
+  position: relative;
+
+  height: 300px;
+  padding: 43px 60px 152px 60px;
+
   background-color: var(--additional-jasmine);
 }
 
+.header__logo-link {
+  position: absolute;
+  top: -23px;
+  left: 61px;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
 /* header-search start */
+.header-search {
+  margin-right: 60px;
+}
+
 .header-search__input {
+  width: 480px;
+  padding-left: 36px;
+
   background-color: transparent;
   border: 0;
   outline: none;
@@ -140,6 +173,7 @@ button {
 .header-search__input::placeholder {
   font-size: 16px;
   line-height: 19px;
+  font-family: "Rubik", sans-serif;
   color: var(--basic-black);
 
   opacity: 0.3;
@@ -151,13 +185,32 @@ button {
 /* header-search end */
 
 .header__top-link {
+  display: inline-block;
+
   font-size: 16px;
   line-height: 19px;
   color: var(--basic-black);
+  text-decoration: none;
+}
+
+.header__top-link--user {
+  margin-right: 188px;
+  padding-left: 25px;
+}
+
+.header__top-link--compare {
+  margin-right: 55px;
+  padding-left: 20px;
+}
+
+.header__top-link--basket {
+  padding-left: 26px;
 }
 
 /* header__top-basket start */
 .header__top-basket {
+  display: none;
+
   font-size: 16px;
   line-height: 20px;
   color: var(--basic-white);
@@ -175,13 +228,44 @@ button {
 }
 /* header__top-basket end */
 
-.header__button-catalog-link {
+.header__bottom-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.header__bottom-item:nth-child(1) {
+  margin-right: 314px;
+}
+
+.header__bottom-item:nth-child(2) {
+  margin-right: 30px;
+}
+
+.header__bottom-item:nth-child(3) {
+  margin-right: 91px;
+}
+
+.header__bottom-link {
+  white-space: nowrap;
+}
+
+.header__bottom-catalog-list {
+  display: none;
+
+  list-style-type: none;
+}
+
+.header__bottom-catalog-link {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-black);
+  text-decoration: none;
 }
 
-/* main*/
+/* main start */
 .main__link,
 .main__text {
   font-size: 16px;
@@ -190,46 +274,232 @@ button {
 
   opacity: 0.6;
 }
+
 /* promo-slider start */
+.promo-slider {
+  position: relative;
+  top: -150px;
+
+  margin-bottom: -89px;
+}
+
+.promo-slider__list {
+  margin: 0;
+  padding: 0;
+}
+
+.promo-slider__item {
+  display: none;
+}
+
+.promo-slider__item--current {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-slider__images {
+  width: 560px;
+}
+
+.promo-slider__description {
+  width: 560px;
+  padding-top: 122px;
+}
+
+.promo-slider__subtitle {
+  margin: 0;
+  margin-bottom: 29px;
+}
 
 .promo-slider__text {
+  margin: 0;
+  margin-bottom: 47px;
+
   color: var(--basic-tundora);
 }
 
-.promo-slider__term {
-  font-size: 36px;
-  line-height: 30px;
+.promo-slider__link {
+  display: inline-block;
+  width: 220px;
+  margin-bottom: 69px;
+
+  text-align: center;
 }
 
-.promo-slider__definition {
+.promo-slider__term-list {
+  display: flex;
+  margin: 0;
+}
+
+.promo-slider__term-block {
+  margin-right: 21px;
+}
+
+.promo-slider__term-description {
+  margin-bottom: 11px;
+
+  font-size: 36px;
+}
+
+.promo-slider__term-definition {
+  margin: 0;
+
   font-size: 16px;
   color: var(--basic-tundora);
+}
+
+.promo-slider__button {
+  display: none;
+}
+
+.promo-slider__point-list {
+  position: absolute;
+  right: 60px;
+  bottom: 190px;
+
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.promo-slider__point-item {
+  margin-right: 22px;
+}
+
+.promo-slider__point-item:last-child {
+  margin-right: 0;
+}
+
+.promo-slider__point-button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+
+  background-color: transparent;
+  border: 2px solid var(--basic-black);
+  border-radius: 50%;
+}
+
+.promo-slider__point-button--active {
+  background-color: var(--basic-black);
 }
 /* promo-slider end */
 
 /* goods start */
-.goods__item {
+.goods {
+  margin-bottom: 152px;
+}
+
+.goods__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.goods__link {
+  position: relative;
+
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 33px;
+
   background-color: var(--additional-jasmine);
 }
 
+.goods__image {
+  position: absolute;
+}
+
+.goods__image--virtual-reality {
+  top: 53px;
+  left: 32px;
+}
+
+.goods__image--monopods-for-selfie {
+  top: 43px;
+  left: 37px;
+}
+
+.goods__image--action-cameras {
+  top: 38px;
+  left: 49px;
+}
+
+.goods__image--fitness-bracelets {
+  top: 50px;
+  left: 26px;
+}
+
+.goods__image--smart-watch {
+  top: 31px;
+  left: 53px;
+}
+
+.goods__image--quadrocopters {
+  top: 49px;
+  left: 14px;
+}
+
 .goods__text {
-  font-weight: 800;
+  display: block;
+  width: 160px;
+
   font-size: 18px;
   line-height: 24px;
   font-family: "Raleway", sans-serif;
-  color: var(--basic-black);
   letter-spacing: -0.02em;
 }
 /* goods end */
 
 /* services start */
 .services {
+  margin-bottom: 90px;
+  padding-bottom: 127px;
+
   background-color: var(--basic-gallery);
 }
 
+.services__inner {
+  display: flex;
+}
+
+.services__menu-list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.services__menu-item {
+  margin-bottom: 44px;
+}
+
+.services__menu-item:last-child {
+  margin-bottom: 0;
+}
+
 .services__menu-button {
+  width: 160px;
+  padding: 0;
+
+  text-align: center;
+
   border: 0;
   outline: none;
+}
+
+.services__description-list {
+  margin: 0;
+  margin-left: 240px;
+  padding: 0;
+
+  list-style-type: none;
 }
 
 .services__description-item {
@@ -238,6 +508,12 @@ button {
 
 .services__description-item--current {
   display: block;
+  width: 500px;
+}
+
+.services__description-subtitle {
+  margin: 0;
+  margin-bottom: 34px;
 }
 
 .services__description-text {
@@ -246,45 +522,128 @@ button {
 /* services end */
 
 /* rare-commodity start */
-.rare-commodity__link {
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 23px;
-  font-family: "Raleway", sans-serif;
-  color: var(--basic-black);
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
+.rare-commodity {
+  height: 100px;
+  margin-bottom: 147px;
+  padding-top: 35px;
+
+  text-align: center;
 
   background-color: var(--basic-gallery);
+}
+
+.rare-commodity__link {
+  padding-left: 5px;
+
+  font-size: 20px;
+  line-height: 23px;
 }
 /* rare-commodity end */
 
 /* about-section start */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
 
 /* about-us start */
+.about-us {
+  width: 560px;
+}
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 46px;
+}
+
 .about-us__description {
+  margin: 0;
+  margin-bottom: 31px;
+
   color: var(--basic-tundora);
 }
 
+.about-us__list {
+  margin: 0;
+  margin-top: 75px;
+  margin-bottom: 68px;
+  padding: 0;
+  padding-left: 35px;
+
+  list-style-type: none;
+}
+
 .about-us__item {
+  margin-bottom: 20px;
+
   font-weight: 800;
   line-height: 20px;
+  letter-spacing: -0.3px;
+}
+
+.about-us__link {
+  display: inline-block;
+  width: 260px;
+  padding-left: 4px;
+
+  text-align: center;
 }
 /* about-us end */
 
 /* contacts start */
+.contacts {
+  width: 560px;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 46px;
+}
+
+.contacts__description {
+  margin: 0;
+  margin-bottom: 31px;
+
+  color: var(--basic-tundora);
+}
+
 .contacts__subtitle {
+  margin: 0;
+  margin-bottom: 15px;
+
   font-size: 24px;
   color: var(--basic-tundora);
 }
 
-.contacts__text {
+.contacts__address {
+  margin-bottom: 31px;
+
+  font-style: normal;
+}
+
+.contacts__address-text {
+  margin: 0;
+}
+
+.contacts__tel {
   color: var(--basic-tundora);
 }
 
-.contacts .contacts__tel {
-  color: var(--basic-tundora);
-  text-decoration: underline;
+.contacts__list {
+  margin: 0;
+  margin-bottom: 64px;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.contacts__link {
+  display: inline-block;
+  width: 260px;
+  padding-left: 4px;
+
+  text-align: center;
 }
 /* contacts end */
 
@@ -292,11 +651,36 @@ button {
 
 /* distribution start */
 .distribution {
+  padding-top: 76px;
+  padding-bottom: 131px;
+
   background-color: var(--basic-gallery);
 }
 
+.distribution__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.distribution__title {
+  width: 560px;
+  margin: 0;
+}
+
 .distribution__description {
+  width: 560px;
+  margin: 0;
+  margin-top: 11px;
+
   color: var(--basic-tundora);
+}
+
+.distribution__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .distribution__form {
@@ -305,6 +689,10 @@ button {
 
 .distribution__email {
   width: 600px;
+  height: 55px;
+  padding-top: 8px;
+
+  font-family: "Rubik", sans-serif;
 
   background-color: transparent;
   border: 0;
@@ -326,6 +714,15 @@ button {
 
   background-color: transparent;
   border: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+.distribution__submit-text {
+  padding-left: 4px;
+}
+
+.distribution__text {
+  margin: 0;
+  margin-right: 1px;
 }
 /* distribution end */
 
@@ -387,9 +784,9 @@ button {
 }
 
 .products__download {
+  background-color: transparent;
   border: 0;
   border: 3px solid rgba(0, 0, 0, 0.1);
-  background-color: transparent;
 }
 
 .products__pagination-button {
@@ -405,16 +802,48 @@ button {
   opacity: 0.3;
 }
 /* products end */
+/* main end */
 
-/*footer*/
+/* footer start */
 .footer {
   background-color: var(--basic-tundora);
 }
 
+.footer__inner {
+  padding-top: 62px;
+  padding-bottom: 61px;
+}
+
+.footer__navigation {
+  display: flex;
+  margin-top: 26px;
+  margin-bottom: 51px;
+}
+
 .footer__navigation-text {
+  margin: 0;
+  margin-right: 124px;
+
   font-size: 16px;
   line-height: 19px;
   color: var(--basic-white);
+}
+
+.footer__navigation-list {
+  display: flex;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.footer__navigation-item {
+  margin-right: 29px;
+}
+
+.footer__navigation-item:last-child {
+  margin-right: 0;
 }
 
 .footer__navigation-link {
@@ -422,6 +851,26 @@ button {
 }
 
 .footer__navigation-tel {
+  margin-left: auto;
+
   font-size: 16px;
   color: var(--basic-white);
+  text-decoration: none;
 }
+
+.footer__social-block {
+  display: flex;
+}
+
+.footer__social {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.footer__htmlacademy-link {
+  margin-left: auto;
+}
+
+/* footer end */
