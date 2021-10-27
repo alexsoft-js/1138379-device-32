@@ -26,9 +26,9 @@
               <!-- header-search start -->
                 <form class="header-search header__search-form" action="https://echo.htmlacademy.ru" method="get">
                   <label class="header-search__label" for="search"></label>
-                    <input class="header-search__input" name="site-search" id="search" type="search" placeholder="Поиск по сайту">
-                    <span class="visually-hidden">Поиск по сайту.</span>
-                  <button class="header-search__submit" type="submit">Найти</button>
+                  <input class="header-search__input" name="site-search" id="search" type="search" placeholder="Поиск по сайту">
+                  <button class="header-search__submit" type="submit"><span class="header-search__submit-text">Найти</span></button>
+                  <span class="visually-hidden">Поиск по сайту.</span>
                 </form>
               <!-- header-search end -->
 
@@ -41,19 +41,26 @@
                       <div class="header__top-basket">
                         <ul class="header__top-basket-list">
                           <li class="header__top-basket-item">
-                            <img class="header__top-basket-image" src="images/selfie-stick-amateur-basket.png" width="41" height="43" alt="Любительская селфи-палка.">
-                            <a class="header__top-basket-link" href="#">Любительская селфи-палка</a>
+                            <a class="header__top-basket-link-image" href="#">
+                              <img class="header__top-basket-image" src="images/selfie-stick-amateur-basket.png" width="41" height="43" alt="Любительская селфи-палка.">
+                            </a>
+                            <a class="header__top-basket-link" href="#">Любительская <br /> селфи-палка</a>
+                            <button class="header__top-basket-button"></button>
                           </li>
                           <li class="header__top-basket-item">
-                            <img class="header__top-basket-image" src="images/selfie-stick-professional-basket.png" width="41" height="43" alt="Профессиональная селфи-палка.">
-                            <a class="header__top-basket-link" href="#">Профессиональная селфи-палка</a>
+                            <a class="header__top-basket-link-image" href="#">
+                              <img class="header__top-basket-image" src="images/selfie-stick-professional-basket.png" width="41" height="43" alt="Профессиональная селфи-палка.">
+                            </a>
+                            <a class="header__top-basket-link" href="#">Профессиональная <br /> селфи-палка</a>
+                            <button class="header__top-basket-button"></button>
                           </li>
                         </ul>
                         <div class="header__top-basket-block">
                           <p class="header__top-basket-text">Товаров: 2</p>
                           <p class="header__top-basket-text">Сумма: 2000 ₽</p>
                         </div>
-                        <a class="header__top-basket-open link">Открыть корзину</a>
+                        <button class="header__top-basket-open link">
+                          <span class="header__top-basket-open-text">Открыть корзину</span></button>
                       </div>
                     <!-- header__top-basket end -->
 
@@ -63,7 +70,8 @@
             <ul class="header__bottom-list">
               <li class="header__bottom-item header__bottom-item--catalog">
                 <a class="header__bottom-link header__bottom-link--catalog link" href="catalog.html">Каталог товаров</a>
-                  <ul class="header__bottom-catalog-list">
+                <ul class="header__bottom-catalog-list">
+                  <div class="header__bottom-catalog-block">
                     <li class="header__bottom-catalog-item">
                       <a class="header__bottom-catalog-link" href="#">Виртуальная реальность</a>
                     </li>
@@ -73,16 +81,21 @@
                     <li class="header__bottom-catalog-item">
                       <a class="header__bottom-catalog-link" href="#">Экшн-камеры</a>
                     </li>
+                  </div>
+                  <div class="header__bottom-catalog-block">
                     <li class="header__bottom-catalog-item">
                       <a class="header__bottom-catalog-link" href="#">Фитнес-браслеты</a>
                     </li>
                     <li class="header__bottom-catalog-item">
                       <a class="header__bottom-catalog-link" href="#">Умные часы</a>
                     </li>
+                  </div>
+                  <div class="header__bottom-catalog-block">
                     <li class="header__bottom-catalog-item">
                       <a class="header__bottom-catalog-link" href="#">Квадрокоптеры</a>
                     </li>
-                  </ul>
+                  </div>
+                </ul>
               </li>
               <li class="header__bottom-item">
                 <a class="header__bottom-link link" href="#">Доставка</a>
@@ -134,9 +147,9 @@
                     <img class="promo-slider__image" src="images/fitness-bracelets.png" width="560" height="560" alt="Фитнес-браслет.">
                   </div>
                   <div class="promo-slider__description">
-                    <h3 class="promo-slider__subtitle title">Худеем правильно!</h3>
+                    <h3 class="promo-slider__subtitle title">Худеем <br /> правильно!</h3>
                     <p class="promo-slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                    <a class="promo-slider__link link link-effect" href="#">Подробнее</a>
+                    <a class="promo-slider__link link link--effect" href="#">Подробнее</a>
                     <dl class="promo-slider__term-list">
                       <div class="promo-slider__term-block">
                         <dt class="promo-slider__term-description">48 часов</dt>
@@ -150,15 +163,15 @@
                     <img class="promo-slider__image" src="images/selfie-stick.png" width="560" height="560" alt="Селфи-палка.">
                   </div>
                   <div class="promo-slider__description">
-                    <h3 class="promo-slider__subtitle title">Делай селфи, как Бен Стиллер! </h3>
+                    <h3 class="promo-slider__subtitle title">Делай селфи, <br /> как Бен Стиллер! </h3>
                     <p class="promo-slider__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-                    <a class="promo-slider__link link link-effect" href="#">Подробнее</a>
+                    <a class="promo-slider__link link link--effect" href="#">Подробнее</a>
                     <dl class="promo-slider__term-list">
-                      <div class="promo-slider__term-block">
+                      <div class="promo-slider__term-block promo-slider__term-block--margin">
                         <dt class="promo-slider__term-description">8,5 м</dt>
                         <dd class="promo-slider__term-definition">Длина палки</dd>
                       </div>
-                      <div class="promo-slider__term-block">
+                      <div class="promo-slider__term-block promo-slider__term-block--margin">
                         <dt class="promo-slider__term-description">5 кг</dt>
                         <dd class="promo-slider__term-definition">Вес палки</dd>
                       </div>
@@ -376,17 +389,17 @@
 
             <ul class="footer__social">
               <li class="footer__social-item">
-                <a class="footer__social-link" href="https://www.facebook.com/htmlacademy">
+                <a class="footer__social-link footer__social-link--fb" href="https://www.facebook.com/htmlacademy">
                   <span class="visually-hidden">Фэйсбук.</span>
                 </a>
               </li>
               <li class="footer__social-item">
-                <a class="footer__social-link" href="https://www.instagram.com/htmlacademy">
+                <a class="footer__social-link footer__social-link--in" href="https://www.instagram.com/htmlacademy">
                   <span class="visually-hidden">Инстаграм.</span>
                 </a>
               </li>
               <li class="footer__social-item">
-                <a class="footer__social-link" href="https://www.twitter.com/htmlacademy_ru">
+                <a class="footer__social-link footer__social-link--tw" href="https://www.twitter.com/htmlacademy_ru">
                   <span class="visually-hidden">Твиттер.</span>
                 </a>
               </li>

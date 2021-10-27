@@ -14,7 +14,7 @@
 
     <!-- header start -->
       <header class="header container">
-        <div class="header__inner">
+        <div class="header__inner header__inner--catalog">
 
           <a class="header__logo-link" href="index.html">
             <img class="header__logo-image" src="images/device-header.svg" width="145" height="36" alt="Логотип интернет магазина 'Device'.">
@@ -24,62 +24,78 @@
             <div class="header__top">
 
               <!-- header-search start -->
-                <form class="header-search header__search-form " action="https://echo.htmlacademy.ru" method="get">
-                  <label class="header-search__label">
-                    <input class="header-search__input" name="site-search" type="search" placeholder="Поиск по сайту">
-                    <span class="visually-hidden">Поиск по сайту.</span>
-                  </label>
-                  <button class="header-search__submit" type="submit">Найти</button>
+                <form class="header-search header__search-form" action="https://echo.htmlacademy.ru" method="get">
+                  <label class="header-search__label" for="search"></label>
+                  <input class="header-search__input" name="site-search" id="search" type="search" placeholder="Поиск по сайту">
+                  <button class="header-search__submit" type="submit"><span class="header-search__submit-text">Найти</span></button>
+                  <span class="visually-hidden">Поиск по сайту.</span>
                 </form>
               <!-- header-search end -->
 
-                <a class="header__top-link" href="#">Александр Воронин</a>
-                <a class="header__top-link" href="#">Выйти</a>
-                <a class="header__top-link" href="#">Сравнить</a>
+                <a class="header__top-link header__top-link--user" href="#">Илон Маск</a>
+                <a class="header__top-link header__top-link--log-off" href="#">Выйти</a>
+                <a class="header__top-link header__top-link--compare" href="#">Сравнить</a>
                 <div class="header__top-block">
-                  <a class="header__top-link" href="#">Корзина</a>
-                    <div class="header__top-basket">
-                      <ul class="header__top-basket-list">
-                        <li class="header__top-basket-item">
-                          <img class="header__top-basket-image" src="images/selfie-stick-amateur-basket.png" width="41" height="43" alt="Любительская селфи-палка.">
-                          <a class="header__top-basket-link" href="#">Любительская селфи-палка</a>
-                        </li>
-                        <li class="header__top-basket-item">
-                          <img class="header__top-basket-image" src="images/selfie-stick-professional-basket.png" width="41" height="43" alt="Профессиональная селфи-палка.">
-                          <a class="header__top-basket-link" href="#">Профессиональная селфи-палка</a>
-                        </li>
-                      </ul>
-                      <div class="header__top-basket-block">
-                        <p class="header__top-basket-text">Товаров: 2</p>
-                        <p class="header__top-basket-text">Сумма: 2000 ₽</p>
+                  <a class="header__top-link header__top-link--basket" href="#">Корзина</a>
+
+                    <!-- header__top-basket start -->
+                      <div class="header__top-basket">
+                        <ul class="header__top-basket-list">
+                          <li class="header__top-basket-item">
+                            <a class="header__top-basket-link-image" href="#">
+                              <img class="header__top-basket-image" src="images/selfie-stick-amateur-basket.png" width="41" height="43" alt="Любительская селфи-палка.">
+                            </a>
+                            <a class="header__top-basket-link" href="#">Любительская <br /> селфи-палка</a>
+                            <button class="header__top-basket-button"></button>
+                          </li>
+                          <li class="header__top-basket-item">
+                            <a class="header__top-basket-link-image" href="#">
+                              <img class="header__top-basket-image" src="images/selfie-stick-professional-basket.png" width="41" height="43" alt="Профессиональная селфи-палка.">
+                            </a>
+                            <a class="header__top-basket-link" href="#">Профессиональная <br /> селфи-палка</a>
+                            <button class="header__top-basket-button"></button>
+                          </li>
+                        </ul>
+                        <div class="header__top-basket-block">
+                          <p class="header__top-basket-text">Товаров: 2</p>
+                          <p class="header__top-basket-text">Сумма: 2000 ₽</p>
+                        </div>
+                        <button class="header__top-basket-open link">
+                          <span class="header__top-basket-open-text">Открыть корзину</span></button>
                       </div>
-                      <a class="header__top-basket-open link">Открыть корзину</a>
-                    </div>
+                    <!-- header__top-basket end -->
+
                 </div>
             </div>
 
             <ul class="header__bottom-list">
-              <li class="header__bottom-item">
-                <a class="header__bottom-link link" href="catalog.html">Каталог товаров</a>
-                  <ul class="header__button-catalog-list">
-                    <li class="header__button-catalog-item">
-                      <a class="header__button-catalog-link" href="#">Виртуальная реальность</a>
-                    </li>
-                    <li class="header__button-catalog-item">
-                      <a class="header__button-catalog-link" href="#">Моноподы для cелфи</a>
-                    </li>
-                    <li class="header__button-catalog-item">
-                      <a class="header__button-catalog-link" href="#">Экшн-камеры</a>
-                    </li>
-                    <li class="header__button-catalog-item">
-                      <a class="header__button-catalog-link" href="#">Фитнес-браслеты</a>
-                    </li>
-                    <li class="header__button-catalog-item">
-                      <a class="header__button-catalog-link" href="#">Умные часы</a>
-                    </li>
-                    <li class="header__button-catalog-item">
-                      <a class="header__button-catalog-link" href="#">Квадрокоптеры</a>
-                    </li>
+              <li class="header__bottom-item header__bottom-item--catalog">
+                <a class="header__bottom-link header__bottom-link--catalog link" href="#">Каталог товаров</a>
+                  <ul class="header__bottom-catalog-list">
+                    <div class="header__bottom-catalog-block">
+                      <li class="header__bottom-catalog-item">
+                        <a class="header__bottom-catalog-link" href="#">Виртуальная реальность</a>
+                      </li>
+                      <li class="header__bottom-catalog-item">
+                        <a class="header__bottom-catalog-link" href="#">Моноподы для cелфи</a>
+                      </li>
+                      <li class="header__bottom-catalog-item">
+                        <a class="header__bottom-catalog-link" href="#">Экшн-камеры</a>
+                      </li>
+                    </div>
+                    <div class="header__bottom-catalog-block">
+                      <li class="header__bottom-catalog-item">
+                        <a class="header__bottom-catalog-link" href="#">Фитнес-браслеты</a>
+                      </li>
+                      <li class="header__bottom-catalog-item">
+                        <a class="header__bottom-catalog-link" href="#">Умные часы</a>
+                      </li>
+                    </div>
+                    <div class="header__bottom-catalog-block">
+                      <li class="header__bottom-catalog-item">
+                        <a class="header__bottom-catalog-link" href="#">Квадрокоптеры</a>
+                      </li>
+                    </div>
                   </ul>
               </li>
               <li class="header__bottom-item">
@@ -102,7 +118,7 @@
       <main class="main">
         <h1 class="visually-hidden">Каталог интернет магазина 'Device'</h1>
 
-        <section class="main__container">
+        <section class="main__container container">
           <h2 class="main__title title">Моноподы для селфи</h2>
           <ul class="main__list">
             <li class="main__item">
@@ -117,7 +133,7 @@
           </ul>
         </section>
 
-        <div class="catalog">
+        <div class="catalog container">
 
           <!-- filters start -->
             <section class="filters">
@@ -289,42 +305,46 @@
           </a>
 
           <div class="footer__navigation">
-            <p class="footer__navigation-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <p class="footer__navigation-text">Санкт-Петербург, набережная <br /> реки Карповки, 5, литера П.</p>
             <ul class="footer__navigation-list">
               <li class="footer__navigation-item">
-                <a class="footer__navigation-link" href="#">Доставка</a>
+                <a class="footer__navigation-link link" href="#">Доставка</a>
               </li>
               <li class="footer__navigation-item">
-                <a class="footer__navigation-link" href="#">Гарантия</a>
+                <a class="footer__navigation-link link" href="#">Гарантия</a>
               </li>
               <li class="footer__navigation-item">
-                <a class="footer__navigation-link" href="#">Контакты</a>
+                <a class="footer__navigation-link link" href="#">Контакты</a>
               </li>
             </ul>
-            <a class="footer__navigation-link" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
+            <a class="footer__navigation-tel" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
           </div>
 
-          <ul class="footer__social">
-            <li class="footer__social-item">
-              <a class="footer__social-link" href="https://www.facebook.com/htmlacademy">
-                <span class="visually-hidden">Фэйсбук.</span>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a class="footer__social-link" href="https://www.instagram.com/htmlacademy">
-                <span class="visually-hidden">Инстаграм.</span>
-              </a>
-            </li>
-            <li class="footer__social-item">
-              <a class="footer__social-link" href="https://www.twitter.com/htmlacademy_ru">
-                <span class="visually-hidden">Твиттер.</span>
-              </a>
-            </li>
-          </ul>
+          <div class="footer__social-block">
 
-          <a class="footer__htmlacademy-link" href="https://htmlacademy.ru">
-            <img class="footer__htmlacademy-image" src="images/logo-htmlacademy-footer.svg" width="115" height="34" alt="Логотип 'htmlacademy.">
-          </a>
+            <ul class="footer__social">
+              <li class="footer__social-item">
+                <a class="footer__social-link footer__social-link--fb" href="https://www.facebook.com/htmlacademy">
+                  <span class="visually-hidden">Фэйсбук.</span>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link footer__social-link--in" href="https://www.instagram.com/htmlacademy">
+                  <span class="visually-hidden">Инстаграм.</span>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link footer__social-link--tw" href="https://www.twitter.com/htmlacademy_ru">
+                  <span class="visually-hidden">Твиттер.</span>
+                </a>
+              </li>
+            </ul>
+
+            <a class="footer__htmlacademy-link" href="https://htmlacademy.ru">
+              <img class="footer__htmlacademy-image" src="images/logo-htmlacademy-footer.svg" width="115" height="34" alt="Логотип 'htmlacademy.">
+            </a>
+
+          </div>
 
         </div>
       </footer>
