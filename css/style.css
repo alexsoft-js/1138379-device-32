@@ -141,6 +141,17 @@ input[type="search"]::-webkit-search-results-decoration {
   font-family: "Raleway", sans-serif;
 }
 
+.subtitle {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Raleway", sans-serif;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+}
+
 .link {
   position: relative;
   z-index: 1;
@@ -197,9 +208,14 @@ input[type="search"]::-webkit-search-results-decoration {
   position: relative;
 
   min-height: 300px;
-  padding: 0 60px 0;
+  padding: 0 60px 150px;
 
   background-color: var(--additional-jasmine);
+}
+
+.header__inner--catalog {
+  min-height: 186px;
+  padding-bottom: 0;
 }
 
 .header__logo-link {
@@ -208,6 +224,8 @@ input[type="search"]::-webkit-search-results-decoration {
   left: 61px;
 
   display: flex;
+
+  outline: 0;
 }
 
 .header__navigation {
@@ -287,7 +305,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .header-search__submit {
   width: 160px;
   height: 40px;
-  padding: 0;
+  padding: 8px 8px;
 
   font-size: 16px;
   line-height: 20px;
@@ -311,13 +329,9 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .header-search__submit:active {
-  border-color: var(--basic-black);
-}
+  color: rgba(255, 255, 255, 0.3);
 
-.header-search__submit-text {
-  display: inline-block;
-  width: 160px;
-  padding: 8px 8px;
+  border-color: var(--basic-black);
 }
 
 .header-search__submit-text:active {
@@ -380,7 +394,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .header__top-link--log-off {
-  margin-right: 10px;
+  margin-right: 33px;
   margin-left: -136px;
 
   color: rgba(0, 0, 0, 0.3);
@@ -443,7 +457,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .header__top-basket-block:focus-within .header__top-basket {
   position: absolute;
   top: 41px;
-  right: -70px;
+  right: -192px;
 
   display: block;
   width: 320px;
@@ -646,6 +660,10 @@ input[type="search"]::-webkit-search-results-decoration {
   left: 51px;
 }
 
+.header__bottom-item:nth-child(5) {
+  margin-left: -20px;
+}
+
 .header__bottom-item--catalog:focus {
   outline: 0;
 }
@@ -655,15 +673,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
   display: inline-block;
   padding: 13px 18px;
-
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 20px;
-  font-family: "Raleway", sans-serif;
-  color: var(--basic-black);
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.2em;
 
   border: 2px solid transparent;
   border-radius: 25px;
@@ -794,6 +803,86 @@ input[type="search"]::-webkit-search-results-decoration {
 /* header end */
 
 /* main start */
+.main__inner {
+  padding: 38px 60px;
+}
+
+.main__title {
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.main__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.main__item {
+  position: relative;
+}
+
+.main__item:nth-child(1) {
+  margin-right: -1px;
+  margin-left: -18px;
+}
+
+.main__item:nth-child(2) {
+  margin-right: -1px;
+}
+
+.main__item::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: -2px;
+
+  width: 4px;
+  height: 7px;
+
+  background-image: url(../images/nav-arrow.svg);
+  background-repeat: no-repeat;
+}
+
+.main__item:last-child::before {
+  display: none;
+}
+
+.main__link {
+  display: inline-block;
+  padding: 5px 13px;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+
+  border: 5px solid transparent;
+  outline: 0;
+}
+
+.main__link:focus {
+  border-color: var(--additional-lavender-indigo);
+}
+
+.main__link:hover {
+  color: var(--basic-black);
+}
+
+.main__link:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  border-color: transparent;
+}
+
+.main__item:last-child .main__link {
+  user-select: none;
+}
+
+/* Главная страница start */
 
 /* promo-slider start */
 .promo-slider {
@@ -871,9 +960,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: inline-block;
   width: 220px;
   margin-bottom: 55px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 3px;
+  padding: 14px 8px 14px 8px;
 
   text-align: center;
 
@@ -1160,6 +1247,10 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .services__menu-button::before {
+  top: 14px;
+
+  height: calc(100% - 30px);
+
   background-color: var(--additional-supernova);
 }
 
@@ -1189,10 +1280,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .services__menu-button--current:focus::before {
-  background-color: transparent;
-}
-
-.services__menu-button--current::before {
   background-color: transparent;
 }
 
@@ -1268,14 +1355,9 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /* rare-commodity start */
 .rare-commodity {
-  width: 1160px;
-  height: 100px;
-  margin: 0 auto;
   margin-bottom: 147px;
 
   text-align: center;
-
-  background-color: var(--basic-gallery);
 }
 
 .rare-commodity__link {
@@ -1283,20 +1365,19 @@ input[type="search"]::-webkit-search-results-decoration {
 
   display: inline-block;
   width: 1160px;
-  height: 100px;
-  padding-top: 37px;
-  padding-bottom: 43px;
-  padding-left: 5px;
+  min-height: 100px;
+  padding: 40px 140px 40px 140px;
 
   font-weight: 800;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 20px;
   font-family: "Raleway", sans-serif;
   color: var(--basic-black);
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
 
+  background-color: var(--basic-gallery);
   outline: none;
 }
 
@@ -1309,8 +1390,9 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .rare-commodity__link:active {
+  color: rgba(0, 0, 0, 0.3);
+
   outline: 0;
-  opacity: 0.3;
 }
 
 .rare-commodity__link:before,
@@ -1327,7 +1409,7 @@ input[type="search"]::-webkit-search-results-decoration {
   left: 0;
 
   width: 125px;
-  height: 100px;
+  height: 100%;
 
   background-color: var(--additional-jasmine);
   background-image: url(../images/delivery-car.svg);
@@ -1335,6 +1417,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .rare-commodity__link:hover::before {
   background-color: var(--additional-supernova);
+}
+
+.rare-commodity__link:active::before {
+  opacity: 0.3;
 }
 
 .rare-commodity__link::after {
@@ -1352,6 +1438,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .rare-commodity__link:hover::after {
   opacity: 1;
+}
+
+.rare-commodity__link:active::after {
+  opacity: 0.3;
 }
 /* rare-commodity end */
 
@@ -1582,15 +1672,6 @@ input[type="search"]::-webkit-search-results-decoration {
   padding: 14px 14px;
   padding-left: 17px;
 
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 20px;
-  font-family: "Raleway", sans-serif;
-  color: var(--basic-black);
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.2em;
-
   background-color: transparent;
   border: 3px solid rgba(0, 0, 0, 0.1);
   outline: 0;
@@ -1631,6 +1712,139 @@ input[type="search"]::-webkit-search-results-decoration {
   background-repeat: no-repeat;
 }
 /* distribution end */
+
+/* Главная страница end */
+
+/* Каталог start */
+
+/* catalog start */
+.catalog {
+  display: flex;
+}
+
+/* filters start */
+.filters {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.filters__top {
+  display: flex;
+  justify-content: flex-end;
+
+  background-image: linear-gradient(to bottom, var(--basic-white) 0px, hsl(0,0%,86.3%) 0px);
+}
+
+.filters__title {
+  width: 329px;
+  margin: 0;
+  padding: 25px 0;
+  padding-left: 60px;
+
+  font-size: 16px;
+}
+
+.filters__form-container {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+
+  background-image: linear-gradient(to bottom, var(--basic-white) 0px, hsl(0,0%,89.8%) 0px);
+}
+
+.filters__form {
+  width: 269px;
+  padding-top: 71px;
+  padding-right: 69px;
+}
+/* filters end */
+
+/* products start */
+.products {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.products__top {
+  display: flex;
+  justify-content: flex-start;
+
+  background-image: linear-gradient(to bottom, var(--basic-white) 0px, hsl(0,0%,89.8%) 0px);
+}
+
+.products__sort {
+  display: flex;
+  align-items: center;
+  width: 832px;
+}
+
+.products__title {
+  margin: 0;
+  margin-right: 32px;
+  margin-left: 72px;
+  padding: 25px 0;
+
+  font-size: 16px;
+}
+
+.products__popular-first {
+  position: relative;
+
+  display: inline-block;
+  padding: 5px 41px 5px 13px;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-black);
+  text-decoration: none;
+
+  border: 5px solid transparent;
+  outline: 0;
+}
+
+.products__popular-first:focus {
+  border: 5px solid var(--additional-lavender-indigo);
+}
+
+.products__popular-first:hover {
+  opacity: 0.6;
+}
+
+.products__popular-first:active {
+  border-color: transparent;
+  opacity: 0.3;
+}
+
+.products__popular-first::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 15px;
+
+  width: 11px;
+  height: 6px;
+
+  background-image: url(../images/dropdown.svg);
+  background-repeat: no-repeat;
+}
+
+.products__sort-list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+.products__list {
+  width: 832px;
+}
+/* products end */
+
+/* catalog end */
+
+
+/* Каталог end */
 
 /* main end */
 
@@ -1682,6 +1896,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .footer__navigation-list {
   display: flex;
   flex-wrap: wrap;
+  width: 500px;
   margin: 0;
   margin-top: -11px;
   padding: 0;
@@ -1697,14 +1912,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .footer__navigation-link {
   padding: 13px 18px;
 
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 20px;
-  font-family: "Raleway", sans-serif;
   color: var(--basic-white);
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.2em;
 
   border: 2px solid transparent;
   border-radius: 25px;
@@ -1736,7 +1944,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .footer__navigation-tel {
-  position: absolute;
   position: absolute;
   top: 0;
   right: 0;
@@ -1850,8 +2057,9 @@ input[type="search"]::-webkit-search-results-decoration {
 .footer__htmlacademy-link {
   position: absolute;
   right: 8px;
-  bottom: 54px;
+  bottom: 63px;
 
+  display: flex;
   padding: 8px;
 
   border: 2px solid transparent;
