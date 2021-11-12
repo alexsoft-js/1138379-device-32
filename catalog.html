@@ -21,6 +21,7 @@
           </a>
 
           <nav class="header__navigation">
+
             <div class="header__top">
 
               <!-- header-search start -->
@@ -34,7 +35,7 @@
               <!-- header-search end -->
 
                 <a class="header__top-link header__top-link--user" href="#">Илон Маск</a>
-                <a class="header__top-link header__top-link--log-off" href="#">Войти</a>
+                <a class="header__top-link header__top-link--log-off" href="#">Выйти</a>
                 <a class="header__top-link header__top-link--compare" href="#">Сравнить</a>
                 <div class="header__top-basket-block" tabindex="0">
                   <a class="header__top-link header__top-link--basket" href="#" tabindex="-1">Корзина</a>
@@ -68,7 +69,6 @@
                         <button class="header__top-basket-open link" type="button">Открыть корзину</button>
                       </div>
                     <!-- header__top-basket end -->
-
                 </div>
             </div>
 
@@ -106,6 +106,7 @@
                 <a class="header__bottom-link subtitle" href="#">Контакты</a>
               </li>
             </ul>
+
           </nav>
 
         </div>
@@ -144,62 +145,80 @@
 
               <div class="filters__form-container">
                 <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
-                  <div class="filters__block">
+                  <div class="filters__block filters__block--range">
                     <fieldset class="filters__field">
                       <legend class="filters__subtitle">Стоимость</legend>
-                      <label class="filters__label">
-                        <input class="filters__number" type="number" name="min" value="0">
-                        <span class="visually-hidden">от</span>
-                      </label>
-                      <label class="filters__label">
-                        <input class="filters__number" type="number" name="max" value="5000">
-                        <span class="visually-hidden">до</span>
-                      </label>
+                        <div class="filters__range">
+                          <div class="filters__range-scale">
+                            <div class="filters__range-scale-bar" style="width: 119px">
+                              <div class="filters__range-scale-button filters__range-scale-button--min">
+                                <button class="filters__range-scale-toggle filters__range-scale-toggle--min">
+                                  <span class="visually-hidden">Изменить минимальную цену</span>
+                                </button>
+                                <label class="filters__range-label filters__range-label--min" for="range-min">
+                                  от
+                                  <span class="visually-hidden">от</span>
+                                </label>
+                                <input class="filters__range-number" id="range-min" type="number" name="min" value="0">
+                              </div>
+                              <div class="filters__range-scale-button filters__range-scale-button--max">
+                                <button class="filters__range-scale-toggle filters__range-scale-toggle--max">
+                                  <span class="visually-hidden">Изменить максимальную цену</span>
+                                </button>
+                                <label class="filters__range-label filters__range-label--max" for="range-max">
+                                  до
+                                  <span class="visually-hidden">до</span>
+                                </label>
+                                <input class="filters__range-number" id="range-max" type="number" name="max" value="5000">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                     </fieldset>
                   </div>
-                  <div class="filters__block">
+                  <div class="filters__block filters__block--color">
                     <fieldset class="filters__field">
                       <legend class="filters__subtitle">Цвет</legend>
                       <ul class="filters__list">
-                        <li class="filters__item">
-                          <input class="visually-hidden" type="checkbox" name="color-black" id="black" checked>
+                        <li class="filters__item" tabindex="0">
+                          <input class="filters__checked-input visually-hidden" type="checkbox" name="color-black" id="black" tabindex="-1" checked>
                           <label class="filters__checked" for="black">Черный</label>
                         </li>
-                        <li class="filters__item">
-                          <input class="visually-hidden" type="checkbox" name="color-white" id="white" checked>
+                        <li class="filters__item" tabindex="0">
+                          <input class="filters__checked-input visually-hidden" type="checkbox" name="color-white" id="white" tabindex="-1" checked>
                           <label class="filters__checked" for="white">Белый</label>
                         </li>
-                        <li class="filters__item">
-                          <input class="visually-hidden" type="checkbox" name="color-blue" id="blue">
+                        <li class="filters__item" tabindex="0">
+                          <input class="filters__checked-input visually-hidden" type="checkbox" name="color-blue" id="blue" tabindex="-1">
                           <label class="filters__checked" for="blue">Синий</label>
                         </li>
-                        <li class="filters__item">
-                          <input class="visually-hidden" type="checkbox" name="color-red" id="red">
+                        <li class="filters__item" tabindex="0">
+                          <input class="filters__checked-input visually-hidden" type="checkbox" name="color-red" id="red" tabindex="-1">
                           <label class="filters__checked" for="red">Красный</label>
                         </li>
-                        <li class="filters__item">
-                          <input class="visually-hidden" type="checkbox" name="color-pink" id="pink">
+                        <li class="filters__item" tabindex="0">
+                          <input class="filters__checked-input visually-hidden" type="checkbox" name="color-pink" id="pink" tabindex="-1">
                           <label class="filters__checked" for="pink">Розовый</label>
                         </li>
                       </ul>
                     </fieldset>
                   </div>
-                  <div class="filters__block">
+                  <div class="filters__block filters__block--bluetooth">
                     <fieldset class="filters__field">
                       <legend class="filters__subtitle">Bluetooth</legend>
                         <ul class="filters__list">
-                          <li class="filters__item">
-                            <input class="visually-hidden" type="radio" name="bluetooth" id="bluetooth-true" value="true" checked>
+                          <li class="filters__item filters__item--radio" tabindex="0">
+                            <input class="filters__radio-input visually-hidden" type="radio" name="bluetooth" id="bluetooth-true" value="true" tabindex="-1" checked>
                             <label class="filters__radio" for="bluetooth-true">Есть</label>
                           </li>
-                          <li class="filters__item">
-                            <input class="visually-hidden" type="radio" name="bluetooth" id="bluetooth-false" value="false">
+                          <li class="filters__item filters__item--radio" tabindex="0">
+                            <input class="filters__radio-input visually-hidden" type="radio" name="bluetooth" id="bluetooth-false" value="false" tabindex="-1">
                             <label class="filters__radio" for="bluetooth-false">Нет</label>
                           </li>
                         </ul>
                     </fieldset>
                   </div>
-                  <button class="filters__submit link link-effect" type="submit">Показать</button>
+                  <button class="filters__submit link link--effect" type="submit">Показать</button>
                 </form>
               </div>
 
@@ -233,52 +252,60 @@
               </section>
 
               <ul class="products__list">
-                <li class="products__item">
+                <li class="products__item" tabindex="0">
                   <div class="products__info">
                     <h3 class="products__subtitle">Любительская селфи-палка</h3>
                     <span class="products__price">500 ₽</span>
                   </div>
-                  <a class="products__link" href="#">
+                  <a class="products__link" href="#" tabindex="-1">
                     <img class="products__image" src="images/selfie-stick-amateur.png" width="360" height="380" alt="Любительская селфи-палка.">
                   </a>
-                  <a class="products__details link link-effect" href="#">Подробнее</a>
+                  <div class="products__details-block">
+                    <a class="products__details link link--effect" href="#">Подробнее</a>
+                  </div>
                 </li>
-                <li class="products__item">
+                <li class="products__item" tabindex="0">
                   <div class="products__info">
-                    <h3 class="products__subtitle">Профессиональная селфи-палка</h3>
+                    <h3 class="products__subtitle">Профессиональная <br /> селфи-палка</h3>
                     <span class="products__price">1 500 ₽</span>
                   </div>
-                  <a class="products__link" href="#">
+                  <a class="products__link" href="#" tabindex="-1">
                     <img class="products__image" src="images/selfie-stick-professional.png" width="360" height="380" alt="Профессиональная селфи-палка.">
                   </a>
-                  <a class="products__details link link-effect" href="#">Подробнее</a>
+                  <div class="products__details-block">
+                    <a class="products__details link link--effect" href="#">Подробнее</a>
+                  </div>
                 </li>
-                <li class="products__item">
+                <li class="products__item" tabindex="0">
                   <div class="products__info">
-                    <h3 class="products__subtitle">Непотопляемая селфи-палка</h3>
+                    <h3 class="products__subtitle">Непотопляемая <br /> селфи-палка</h3>
                     <span class="products__price">2 500 ₽</span>
                   </div>
-                  <a class="products__link" href="#">
+                  <a class="products__link" href="#" tabindex="-1">
                     <img class="products__image" src="images/selfie-stick-unsinkable.png" width="360" height="380" alt="Непотопляемая селфи-палка.">
                   </a>
-                  <a class="products__details link link-effect" href="#">Подробнее</a>
+                  <div class="products__details-block">
+                    <a class="products__details link link--effect" href="#">Подробнее</a>
+                  </div>
                 </li>
-                <li class="products__item products__item--new">
+                <li class="products__item products__item--new" tabindex="0">
                   <div class="products__info">
                     <h3 class="products__subtitle">Селфи-палка «Следуй за мной»</h3>
                     <span class="products__price">4 900 ₽</span>
                   </div>
-                  <a class="products__link" href="#">
+                  <a class="products__link" href="#" tabindex="-1">
                     <img class="products__image" src="images/selfie-stick-follow-me.png" width="360" height="380" alt="Селфи-палка «Следуй за мной».">
                   </a>
-                  <a class="products__details link link-effect" href="#">Подробнее</a>
+                  <div class="products__details-block">
+                    <a class="products__details link link--effect" href="#">Подробнее</a>
+                  </div>
                 </li>
               </ul>
-              <button class="products__download link" type="button">Загрузить еще</button>
+              <button class="products__download" type="button">Загрузить еще</button>
 
               <div class="products__pagination">
-                <a class="products__pagination-button link" href="#">Назад</a>
-                <a class="products__pagination-button link" href="#">Вперед</a>
+                <a class="products__pagination-button products__pagination-button--back link" href="#">Назад</a>
+                <a class="products__pagination-button products__pagination-button--forward link" href="#">Вперёд</a>
                 <ul class="products__pagination-list">
                   <li class="products__pagination-item">
                     <a class="products__pagination-link products__pagination-link--current" href="#">1</a>
@@ -288,6 +315,12 @@
                   </li>
                   <li class="products__pagination-item">
                     <a class="products__pagination-link" href="#">3</a>
+                  </li>
+                  <li class="products__pagination-item">
+                    <a class="products__pagination-link">...</a>
+                  </li>
+                  <li class="products__pagination-item">
+                    <a class="products__pagination-link" href="#">15</a>
                   </li>
                 </ul>
               </div>
