@@ -17,35 +17,36 @@
         <div class="header__inner">
 
           <a class="header__logo-link">
-            <img class="header__logo-image" src="images/device-header.svg" width="145" height="36" alt="Логотип интернет магазина 'Device'.">
+            <img class="header__logo-link-image" src="images/device-header.svg" width="145" height="36" alt="Логотип интернет магазина 'Device'.">
           </a>
 
           <nav class="header__navigation">
 
-            <div class="header__top">
+            <!-- header__top start -->
+              <div class="header__top">
 
-              <!-- header-search start -->
-                <form class="header-search header__search-form" action="https://echo.htmlacademy.ru" method="get">
-                  <label class="header-search__label" for="search">
-                    <span class="visually-hidden">Поиск по сайту.</span>
-                  </label>
-                  <input class="header-search__input" name="site-search" id="search" type="search" autocomplete="off" placeholder="Поиск по сайту">
-                  <button class="header-search__submit" type="submit">Найти</button>
-                </form>
-              <!-- header-search end -->
+                <!-- header-search start -->
+                  <form class="header-search header__search-form" action="https://echo.htmlacademy.ru" method="get">
+                    <label class="header-search__label" for="search">
+                      <span class="visually-hidden">Поиск по сайту.</span>
+                    </label>
+                    <input class="header-search__input" id="search" name="site-search" type="search" placeholder="Поиск по сайту" autocomplete="off">
+                    <button class="header-search__submit" type="submit">Найти</button>
+                  </form>
+                <!-- header-search end -->
 
-                <a class="header__top-link header__top-link--user" href="#">Войти</a>
-                <a class="header__top-link header__top-link--compare" href="#">Сравнить</a>
-                <div class="header__top-basket-block" tabindex="0">
-                  <a class="header__top-link header__top-link--basket" href="#" tabindex="-1">Корзина</a>
+                  <a class="header__top-link header__top-link--user" href="#">Войти</a>
+                  <a class="header__top-link header__top-link--compare" href="#">Сравнить</a>
 
-                    <!-- header__top-basket start -->
-                      <div class="header__top-basket">
+                  <!-- header__top-basket start -->
+                    <div class="header__top-basket">
+                      <a class="header__top-link header__top-link--basket" href="#">Корзина</a>
+                      <div class="header__top-basket-block">
                         <ul class="header__top-basket-list">
                           <li class="header__top-basket-item">
                             <a class="header__top-basket-link" href="#">
-                              <img class="header__top-basket-image" src="images/selfie-stick-amateur-basket.png" width="41" height="43" alt="Любительская селфи-палка.">
-                              <span class="header__top-basket-link-text" href="#">Любительская <br /> селфи-палка</span>
+                              <img class="header__top-basket-link-image" src="images/selfie-stick-amateur-basket.png" width="41" height="43" alt="Любительская селфи-палка.">
+                              <span class="header__top-basket-link-text">Любительская <br /> селфи-палка</span>
                             </a>
                             <button class="header__top-basket-button" type="button">
                               <span class="visually-hidden">Удаление товара.</span>
@@ -53,59 +54,63 @@
                           </li>
                           <li class="header__top-basket-item">
                             <a class="header__top-basket-link" href="#">
-                              <img class="header__top-basket-image" src="images/selfie-stick-professional-basket.png" width="41" height="43" alt="Профессиональная селфи-палка.">
-                              <span class="header__top-basket-link-text" href="#">Профессиональная <br /> селфи-палка</span>
+                              <img class="header__top-basket-link-image" src="images/selfie-stick-professional-basket.png" width="41" height="43" alt="Профессиональная селфи-палка.">
+                              <span class="header__top-basket-link-text">Профессиональная <br /> селфи-палка</span>
                             </a>
                             <button class="header__top-basket-button" type="button">
                               <span class="visually-hidden">Удаление товара.</span>
                             </button>
                           </li>
                         </ul>
-                        <div class="header__top-basket-block-text">
-                          <p class="header__top-basket-text">Товаров: 2</p>
-                          <p class="header__top-basket-text">Сумма: 2000 ₽</p>
+                        <div class="header__top-basket-goods">
+                          <p class="header__top-basket-goods-text">Товаров: 2</p>
+                          <p class="header__top-basket-goods-text">Сумма: 2000 ₽</p>
                         </div>
-                        <button class="header__top-basket-open link" type="button">Открыть корзину</button>
+                        <button class="header__top-basket-open widescale" type="button">Открыть корзину</button>
                       </div>
-                    <!-- header__top-basket end -->
-                </div>
-            </div>
+                    </div>
+                  <!-- header__top-basket end -->
 
-            <ul class="header__bottom-list">
-              <li class="header__bottom-item header__bottom-item--catalog" tabindex="1">
-                <a class="header__bottom-link header__bottom-link--catalog subtitle" href="catalog.html">Каталог товаров</a>
-                  <ul class="header__bottom-catalog-list">
-                    <li class="header__bottom-catalog-item">
-                      <a class="header__bottom-catalog-link" href="#">Виртуальная реальность</a>
-                    </li>
-                    <li class="header__bottom-catalog-item">
-                      <a class="header__bottom-catalog-link" href="#">Моноподы для cелфи</a>
-                    </li>
-                    <li class="header__bottom-catalog-item">
-                      <a class="header__bottom-catalog-link" href="#">Экшн-камеры</a>
-                    </li>
-                    <li class="header__bottom-catalog-item">
-                      <a class="header__bottom-catalog-link" href="#">Фитнес-браслеты</a>
-                    </li>
-                    <li class="header__bottom-catalog-item">
-                      <a class="header__bottom-catalog-link" href="#">Умные часы</a>
-                    </li>
-                    <li class="header__bottom-catalog-item">
-                      <a class="header__bottom-catalog-link" href="#">Квадрокоптеры</a>
-                    </li>
-                  </ul>
-              </li>
-              <li class="header__bottom-item">
-                <a class="header__bottom-link subtitle" href="#">Доставка</a>
-              </li>
-              <li class="header__bottom-item">
-                <a class="header__bottom-link subtitle" href="#">Гарантия</a>
-              </li>
-              <li class="header__bottom-item">
-                <a class="header__bottom-link subtitle" href="#">Контакты</a>
-              </li>
-            </ul>
-            
+              </div>
+            <!-- header__top end -->
+
+            <!-- header__bottom start -->
+              <ul class="header__bottom-list">
+                <li class="header__bottom-item header__bottom-item--catalog" tabindex="1">
+                  <a class="header__bottom-link header__bottom-link--catalog widescale" href="catalog.html">Каталог товаров</a>
+                    <ul class="header__bottom-catalog-list">
+                      <li class="header__bottom-catalog-item">
+                        <a class="header__bottom-catalog-link" href="#">Виртуальная реальность</a>
+                      </li>
+                      <li class="header__bottom-catalog-item">
+                        <a class="header__bottom-catalog-link" href="#">Моноподы для cелфи</a>
+                      </li>
+                      <li class="header__bottom-catalog-item">
+                        <a class="header__bottom-catalog-link" href="#">Экшн-камеры</a>
+                      </li>
+                      <li class="header__bottom-catalog-item">
+                        <a class="header__bottom-catalog-link" href="#">Фитнес-браслеты</a>
+                      </li>
+                      <li class="header__bottom-catalog-item">
+                        <a class="header__bottom-catalog-link" href="#">Умные часы</a>
+                      </li>
+                      <li class="header__bottom-catalog-item">
+                        <a class="header__bottom-catalog-link" href="#">Квадрокоптеры</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="header__bottom-item">
+                  <a class="header__bottom-link widescale" href="#">Доставка</a>
+                </li>
+                <li class="header__bottom-item">
+                  <a class="header__bottom-link widescale" href="#">Гарантия</a>
+                </li>
+                <li class="header__bottom-item">
+                  <a class="header__bottom-link widescale" href="#">Контакты</a>
+                </li>
+              </ul>
+            <!-- header__bottom end -->
+
           </nav>
 
         </div>
@@ -126,9 +131,9 @@
                     <img class="promo-slider__image" src="images/quadcopter.png" width="560" height="560" alt="Квадрокоптер.">
                   </div>
                   <div class="promo-slider__description">
-                    <h3 class="promo-slider__subtitle title">Порхает как бабочка, жалит как пчела!</h3>
+                    <h3 class="promo-slider__title title">Порхает как бабочка, жалит как пчела!</h3>
                     <p class="promo-slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером, замаскированным под стандартную камеру.</p>
-                    <a class="promo-slider__link link link--effect" href="#">Подробнее</a>
+                    <a class="promo-slider__link widescale widescale--effect" href="#">Подробнее</a>
                     <dl class="promo-slider__term-list">
                       <div class="promo-slider__term-block">
                         <dt class="promo-slider__term-description">800 м</dt>
@@ -146,9 +151,9 @@
                     <img class="promo-slider__image" src="images/fitness-bracelets.png" width="560" height="560" alt="Фитнес-браслет.">
                   </div>
                   <div class="promo-slider__description">
-                    <h3 class="promo-slider__subtitle title">Худеем <br /> правильно!</h3>
+                    <h3 class="promo-slider__title title">Худеем <br /> правильно!</h3>
                     <p class="promo-slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                    <a class="promo-slider__link link link--effect" href="#">Подробнее</a>
+                    <a class="promo-slider__link widescale widescale--effect" href="#">Подробнее</a>
                     <dl class="promo-slider__term-list">
                       <div class="promo-slider__term-block">
                         <dt class="promo-slider__term-description">48 часов</dt>
@@ -162,15 +167,15 @@
                     <img class="promo-slider__image" src="images/selfie-stick.png" width="560" height="560" alt="Селфи-палка.">
                   </div>
                   <div class="promo-slider__description">
-                    <h3 class="promo-slider__subtitle title">Делай селфи, <br /> как Бен Стиллер! </h3>
+                    <h3 class="promo-slider__title title">Делай селфи, <br /> как Бен Стиллер! </h3>
                     <p class="promo-slider__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-                    <a class="promo-slider__link link link--effect" href="#">Подробнее</a>
+                    <a class="promo-slider__link widescale widescale--effect" href="#">Подробнее</a>
                     <dl class="promo-slider__term-list">
-                      <div class="promo-slider__term-block promo-slider__term-block--margin">
+                      <div class="promo-slider__term-block promo-slider__term-block--selfie-stick">
                         <dt class="promo-slider__term-description">8,5 м</dt>
                         <dd class="promo-slider__term-definition">Длина палки</dd>
                       </div>
-                      <div class="promo-slider__term-block promo-slider__term-block--margin">
+                      <div class="promo-slider__term-block promo-slider__term-block--selfie-stick">
                         <dt class="promo-slider__term-description">5 кг</dt>
                         <dd class="promo-slider__term-definition">Вес палки</dd>
                       </div>
@@ -257,32 +262,32 @@
 
           <!-- services start -->
             <section class="services">
-              <div class="container services__inner">
+              <div class="services__inner container">
                 <h2 class="visually-hidden">Услуги</h2>
 
                 <ul class="services__menu-list">
                   <li class="services__menu-item">
-                    <button class="services__menu-button services__menu-button--current link link--effect" type="button">Доставка</button>
+                    <button class="services__menu-button services__menu-button--current widescale widescale--effect" type="button">Доставка</button>
                   </li>
                   <li class="services__menu-item">
-                    <button class="services__menu-button link link--effect" type="button">Гарантия</button>
+                    <button class="services__menu-button widescale widescale--effect" type="button">Гарантия</button>
                   </li>
                   <li class="services__menu-item">
-                    <button class="services__menu-button link link--effect" type="button">Кредит</button>
+                    <button class="services__menu-button widescale widescale--effect" type="button">Кредит</button>
                   </li>
                 </ul>
 
                 <ul class="services__description-list">
                   <li class="services__description-item services__description-item--current">
-                    <h3 class="services__description-subtitle title">Доставка</h3>
+                    <h3 class="services__description-title title">Доставка</h3>
                     <p class="services__description-text">Мы с удовольствием доставим ваш товар прямо <br /> к вашему подъезду совершенно бесплатно! Ведь <br /> мы неплохо заработаем, поднимая его на ваш этаж.</p>
                   </li>
                   <li class="services__description-item">
-                    <h3 class="services__description-subtitle title">Гарантия</h3>
+                    <h3 class="services__description-title title">Гарантия</h3>
                     <p class="services__description-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
                   </li>
                   <li class="services__description-item">
-                    <h3 class="services__description-subtitle title">Кредит</h3>
+                    <h3 class="services__description-title title">Кредит</h3>
                     <p class="services__description-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
                   </li>
                 </ul>
@@ -311,7 +316,7 @@
                     <li class="about-us__item">СДИК</li>
                     <li class="about-us__item">ТоксБерри</li>
                   </ul>
-                  <a class="about-us__link link link--effect" href="#">Подробнее о нас</a>
+                  <a class="about-us__link widescale widescale--effect" href="#">Подробнее о нас</a>
                 </section>
               <!-- about-us end -->
 
@@ -329,7 +334,7 @@
                     <li class="contacts__item">пн—пт: с 10:00 до 22:00</li>
                     <li class="contacts__item">сб—вс: с 10:00 до 19:00</li>
                   </ul>
-                  <a class="contacts__link link link--effect" href="#">Напишите нам</a>
+                  <a class="contacts__link widescale widescale--effect" href="#">Напишите нам</a>
                 </section>
               <!-- contacts end -->
 
@@ -347,7 +352,7 @@
                   <form class="distribution__form" action="https://echo.htmlacademy.ru" method="post">
                     <label class="visually-hidden" for="your-email-binding">Ваш e-mail.</label>
                     <input class="distribution__email" name="your-emali" id="your-email-binding" type="email" placeholder="Ваш e-mail" required>
-                    <button class="distribution__submit subtitle" type="submit"> <!-- Класс distribution__email--error для состояние ошибки -->
+                    <button class="distribution__submit widescale" type="submit"> <!-- Класс distribution__email--error для состояние ошибки -->
                       Подписаться
                     </button>
                   </form>
@@ -372,13 +377,13 @@
             <p class="footer__navigation-text">Санкт-Петербург, набережная <br /> реки Карповки, 5, литера П.</p>
             <ul class="footer__navigation-list">
               <li class="footer__navigation-item">
-                <a class="footer__navigation-link subtitle" href="#">Доставка</a>
+                <a class="footer__navigation-link widescale" href="#">Доставка</a>
               </li>
               <li class="footer__navigation-item">
-                <a class="footer__navigation-link subtitle" href="#">Гарантия</a>
+                <a class="footer__navigation-link widescale" href="#">Гарантия</a>
               </li>
               <li class="footer__navigation-item">
-                <a class="footer__navigation-link subtitle" href="#">Контакты</a>
+                <a class="footer__navigation-link widescale" href="#">Контакты</a>
               </li>
             </ul>
             <a class="footer__navigation-tel" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
@@ -440,6 +445,55 @@
         </div>
       </footer>
     <!-- footer end -->
+
+    <!-- modal-window start-->
+      <div class="modal-window"> <!-- modal-window--active для открытие модального окна-->
+        <div class="modal-window__order">
+          <section class="modal-window__block">
+            <h2 class="modal-window__title title">Доставка под заказ</h2>
+            <button class="modal-window__close" type="button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <form class="modal-window__form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="modal-window__data">
+                <p class="modal-window__field">
+                  <label class="modal-window__label" for="modal-name">Ваше имя:</label>
+                  <input class="modal-window__input modal-window__input--name" id="modal-name" name="modal-window-name" type="text" placeholder="Имя Фамилия">
+                  <span class="modal-window__under modal-window__under--name">Пожалуйста, представьтесь</span>
+                </p>
+                <p class="modal-window__field">
+                  <label class="modal-window__label" for="modal-email">Ваш e-mail:</label>
+                  <input class="modal-window__input modal-window__input--email" id="modal-email" name="modal-window-email" type="email" placeholder="Введите e-mail">
+                  <span class="modal-window__under">Подпись под полем для ввода</span>
+                </p>
+              </div>
+              <div class="modal-window__data modal-window__data--addition">
+                <p class="modal-window__field">
+                  <label class="modal-window__label" for="modal-description">Что нужно привезти:</label>
+                  <input class="modal-window__input modal-window__input--description" id="modal-description" name="modal-window-description" type="text" placeholder="В свободной форме">
+                </p>
+                <div class="modal-window__data-number">
+                  <label class="modal-window__label modal-window__label--number">Количество:</label>
+                  <span class="modal-window__info" tabindex="0"></span>
+                  <div class="modal-window__info-description">
+                    <p class="modal-window__info-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям <br /> к провозу багажа.</p>
+                  </div>
+                  <p class="modal-window__field modal-window__field--number" tabindex="0">
+                    <button class="modal-window__button modal-window__button--minus" type="button">
+                      <span class="visually-hidden">Убавить товар</span>
+                    </button>
+                    <span class="modal-window__number">1</span>
+                    <button class="modal-window__button modal-window__button--plus" type="button">
+                      <span class="visually-hidden">Прибавить товар</span>
+                    </button>
+                  </p>
+                </div>
+              </div>
+              <button class="modal-window__submit widescale widescale--effect" type="submit">Отправить</button>
+            </form>
+          </section>
+        </div>
+      </div>
 
   </body>
 

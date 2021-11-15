@@ -17,36 +17,37 @@
         <div class="header__inner header__inner--catalog">
 
           <a class="header__logo-link" href="index.html">
-            <img class="header__logo-image" src="images/device-header.svg" width="145" height="36" alt="Логотип интернет магазина 'Device'.">
+            <img class="header__logo-link-image" src="images/device-header.svg" width="145" height="36" alt="Логотип интернет магазина 'Device'.">
           </a>
 
           <nav class="header__navigation">
 
-            <div class="header__top">
+            <!-- header__top start -->
+              <div class="header__top">
 
-              <!-- header-search start -->
-                <form class="header-search header__search-form" action="https://echo.htmlacademy.ru" method="get">
-                  <label class="header-search__label" for="search">
-                    <span class="visually-hidden">Поиск по сайту.</span>
-                  </label>
-                  <input class="header-search__input" name="site-search" id="search" type="search" autocomplete="off" placeholder="Поиск по сайту">
-                  <button class="header-search__submit" type="submit">Найти</button>
-                </form>
-              <!-- header-search end -->
+                <!-- header-search start -->
+                  <form class="header-search header__search-form" action="https://echo.htmlacademy.ru" method="get">
+                    <label class="header-search__label" for="search">
+                      <span class="visually-hidden">Поиск по сайту.</span>
+                    </label>
+                    <input class="header-search__input" id="search" name="site-search" type="search" placeholder="Поиск по сайту" autocomplete="off">
+                    <button class="header-search__submit" type="submit">Найти</button>
+                  </form>
+                <!-- header-search end -->
 
-                <a class="header__top-link header__top-link--user" href="#">Илон Маск</a>
-                <a class="header__top-link header__top-link--log-off" href="#">Выйти</a>
-                <a class="header__top-link header__top-link--compare" href="#">Сравнить</a>
-                <div class="header__top-basket-block" tabindex="0">
-                  <a class="header__top-link header__top-link--basket" href="#" tabindex="-1">Корзина</a>
+                  <a class="header__top-link header__top-link--user header__top-link-catalog header__top-link-catalog--name" href="#">Илон Маск</a>
+                  <a class="header__top-link header__top-link--log-off" href="#">Выйти</a>
+                  <a class="header__top-link header__top-link--compare" href="#">Сравнить</a>
 
-                    <!-- header__top-basket start -->
-                      <div class="header__top-basket">
+                  <!-- header__top-basket start -->
+                    <div class="header__top-basket">
+                      <a class="header__top-link header__top-link--basket" href="#">Корзина</a>
+                      <div class="header__top-basket-block">
                         <ul class="header__top-basket-list">
                           <li class="header__top-basket-item">
                             <a class="header__top-basket-link" href="#">
-                              <img class="header__top-basket-image" src="images/selfie-stick-amateur-basket.png" width="41" height="43" alt="Любительская селфи-палка.">
-                              <span class="header__top-basket-link-text" href="#">Любительская <br /> селфи-палка</span>
+                              <img class="header__top-basket-link-image" src="images/selfie-stick-amateur-basket.png" width="41" height="43" alt="Любительская селфи-палка.">
+                              <span class="header__top-basket-link-text">Любительская <br /> селфи-палка</span>
                             </a>
                             <button class="header__top-basket-button" type="button">
                               <span class="visually-hidden">Удаление товара.</span>
@@ -54,58 +55,62 @@
                           </li>
                           <li class="header__top-basket-item">
                             <a class="header__top-basket-link" href="#">
-                              <img class="header__top-basket-image" src="images/selfie-stick-professional-basket.png" width="41" height="43" alt="Профессиональная селфи-палка.">
-                              <span class="header__top-basket-link-text" href="#">Профессиональная <br /> селфи-палка</span>
+                              <img class="header__top-basket-link-image" src="images/selfie-stick-professional-basket.png" width="41" height="43" alt="Профессиональная селфи-палка.">
+                              <span class="header__top-basket-link-text">Профессиональная <br /> селфи-палка</span>
                             </a>
                             <button class="header__top-basket-button" type="button">
                               <span class="visually-hidden">Удаление товара.</span>
                             </button>
                           </li>
                         </ul>
-                        <div class="header__top-basket-block-text">
-                          <p class="header__top-basket-text">Товаров: 2</p>
-                          <p class="header__top-basket-text">Сумма: 2000 ₽</p>
+                        <div class="header__top-basket-goods">
+                          <p class="header__top-basket-goods-text">Товаров: 2</p>
+                          <p class="header__top-basket-goods-text">Сумма: 2000 ₽</p>
                         </div>
-                        <button class="header__top-basket-open link" type="button">Открыть корзину</button>
+                        <button class="header__top-basket-open widescale" type="button">Открыть корзину</button>
                       </div>
-                    <!-- header__top-basket end -->
-                </div>
-            </div>
+                    </div>
+                  <!-- header__top-basket end -->
 
-            <ul class="header__bottom-list">
-              <li class="header__bottom-item header__bottom-item--catalog" tabindex="1">
-                <a class="header__bottom-link header__bottom-link--catalog subtitle" href="catalog.html">Каталог товаров</a>
-                  <ul class="header__bottom-catalog-list">
-                    <li class="header__bottom-catalog-item">
-                      <a class="header__bottom-catalog-link" href="#">Виртуальная реальность</a>
-                    </li>
-                    <li class="header__bottom-catalog-item">
-                      <a class="header__bottom-catalog-link" href="#">Моноподы для cелфи</a>
-                    </li>
-                    <li class="header__bottom-catalog-item">
-                      <a class="header__bottom-catalog-link" href="#">Экшн-камеры</a>
-                    </li>
-                    <li class="header__bottom-catalog-item">
-                      <a class="header__bottom-catalog-link" href="#">Фитнес-браслеты</a>
-                    </li>
-                    <li class="header__bottom-catalog-item">
-                      <a class="header__bottom-catalog-link" href="#">Умные часы</a>
-                    </li>
-                    <li class="header__bottom-catalog-item">
-                      <a class="header__bottom-catalog-link" href="#">Квадрокоптеры</a>
-                    </li>
-                  </ul>
-              </li>
-              <li class="header__bottom-item">
-                <a class="header__bottom-link subtitle" href="#">Доставка</a>
-              </li>
-              <li class="header__bottom-item">
-                <a class="header__bottom-link subtitle" href="#">Гарантия</a>
-              </li>
-              <li class="header__bottom-item">
-                <a class="header__bottom-link subtitle" href="#">Контакты</a>
-              </li>
-            </ul>
+              </div>
+            <!-- header__top end -->
+
+            <!-- header__bottom start -->
+              <ul class="header__bottom-list">
+                <li class="header__bottom-item header__bottom-item--catalog" tabindex="1">
+                  <a class="header__bottom-link header__bottom-link--catalog widescale" href="catalog.html">Каталог товаров</a>
+                    <ul class="header__bottom-catalog-list">
+                      <li class="header__bottom-catalog-item">
+                        <a class="header__bottom-catalog-link" href="#">Виртуальная реальность</a>
+                      </li>
+                      <li class="header__bottom-catalog-item">
+                        <a class="header__bottom-catalog-link" href="#">Моноподы для cелфи</a>
+                      </li>
+                      <li class="header__bottom-catalog-item">
+                        <a class="header__bottom-catalog-link" href="#">Экшн-камеры</a>
+                      </li>
+                      <li class="header__bottom-catalog-item">
+                        <a class="header__bottom-catalog-link" href="#">Фитнес-браслеты</a>
+                      </li>
+                      <li class="header__bottom-catalog-item">
+                        <a class="header__bottom-catalog-link" href="#">Умные часы</a>
+                      </li>
+                      <li class="header__bottom-catalog-item">
+                        <a class="header__bottom-catalog-link" href="#">Квадрокоптеры</a>
+                      </li>
+                    </ul>
+                </li>
+                <li class="header__bottom-item">
+                  <a class="header__bottom-link widescale" href="#">Доставка</a>
+                </li>
+                <li class="header__bottom-item">
+                  <a class="header__bottom-link widescale" href="#">Гарантия</a>
+                </li>
+                <li class="header__bottom-item">
+                  <a class="header__bottom-link widescale" href="#">Контакты</a>
+                </li>
+              </ul>
+            <!-- header__bottom end -->
 
           </nav>
 
@@ -115,7 +120,7 @@
 
     <!-- main start -->
       <main class="main">
-        <h1 class="visually-hidden">Главная страница интернет магазина 'Device'</h1>
+        <h1 class="visually-hidden">Страница каталога интернет магазина 'Device'</h1>
 
         <section class="main__container container">
           <div class="main__inner">
@@ -140,7 +145,7 @@
             <section class="filters">
 
               <div class="filters__top">
-                <h2 class="filters__title subtitle">Фильтр:</h2>
+                <h2 class="filters__title widescale">Фильтр:</h2>
               </div>
 
               <div class="filters__form-container">
@@ -218,7 +223,7 @@
                         </ul>
                     </fieldset>
                   </div>
-                  <button class="filters__submit link link--effect" type="submit">Показать</button>
+                  <button class="filters__submit widescale widescale--effect" type="submit">Показать</button>
                 </form>
               </div>
 
@@ -231,7 +236,7 @@
 
               <section class="products__top">
                 <div class="products__sort">
-                  <h2 class="products__title subtitle">Сортировка:</h2>
+                  <h2 class="products__title widescale">Сортировка:</h2>
                   <div class="products__block">
                     <a class="products__popular-first" href="#popular-first">Сначала популярные</a>
                     <ul class="products__sort-list">
@@ -242,10 +247,16 @@
                       </li>
                     </ul>
                   </div>
-                  <a class="products__arrow" href="#up">
+                  <a class="products__arrow products__arrow--up" href="#up">
+                    <svg class="products__arrow-svg products__arrow-svg--up" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.5 0L11 10H0" fill="black"/>
+                    </svg>
                     <span class="visually-hidden">Вверх</span>
                   </a>
-                  <a class="products__arrow" href="#down">
+                  <a class="products__arrow products__arrow--down" href="#down">
+                    <svg class="products__arrow-svg products__arrow-svg--down" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.5 10L0 0H11" fill="black"/>
+                    </svg>
                     <span class="visually-hidden">Вниз</span>
                   </a>
                 </div>
@@ -261,7 +272,7 @@
                     <img class="products__image" src="images/selfie-stick-amateur.png" width="360" height="380" alt="Любительская селфи-палка.">
                   </a>
                   <div class="products__details-block">
-                    <a class="products__details link link--effect" href="#">Подробнее</a>
+                    <a class="products__details widescale widescale--effect" href="#">Подробнее</a>
                   </div>
                 </li>
                 <li class="products__item" tabindex="0">
@@ -273,7 +284,7 @@
                     <img class="products__image" src="images/selfie-stick-professional.png" width="360" height="380" alt="Профессиональная селфи-палка.">
                   </a>
                   <div class="products__details-block">
-                    <a class="products__details link link--effect" href="#">Подробнее</a>
+                    <a class="products__details widescale widescale--effect" href="#">Подробнее</a>
                   </div>
                 </li>
                 <li class="products__item" tabindex="0">
@@ -285,27 +296,27 @@
                     <img class="products__image" src="images/selfie-stick-unsinkable.png" width="360" height="380" alt="Непотопляемая селфи-палка.">
                   </a>
                   <div class="products__details-block">
-                    <a class="products__details link link--effect" href="#">Подробнее</a>
+                    <a class="products__details link widescale widescale--effect" href="#">Подробнее</a>
                   </div>
                 </li>
-                <li class="products__item products__item--new" tabindex="0">
+                <li class="products__item" tabindex="0">
                   <div class="products__info">
                     <h3 class="products__subtitle">Селфи-палка «Следуй за мной»</h3>
                     <span class="products__price">4 900 ₽</span>
                   </div>
-                  <a class="products__link" href="#" tabindex="-1">
+                  <a class="products__link products__link--new" href="#" tabindex="-1">
                     <img class="products__image" src="images/selfie-stick-follow-me.png" width="360" height="380" alt="Селфи-палка «Следуй за мной».">
                   </a>
                   <div class="products__details-block">
-                    <a class="products__details link link--effect" href="#">Подробнее</a>
+                    <a class="products__details widescale widescale--effect" href="#">Подробнее</a>
                   </div>
                 </li>
               </ul>
               <button class="products__download" type="button">Загрузить еще</button>
 
               <div class="products__pagination">
-                <a class="products__pagination-button products__pagination-button--back link" href="#">Назад</a>
-                <a class="products__pagination-button products__pagination-button--forward link" href="#">Вперёд</a>
+                <a class="products__pagination-button products__pagination-button--back widescale" href="#">Назад</a>
+                <a class="products__pagination-button products__pagination-button--forward widescale" href="#">Вперёд</a>
                 <ul class="products__pagination-list">
                   <li class="products__pagination-item">
                     <a class="products__pagination-link products__pagination-link--current" href="#">1</a>
@@ -345,13 +356,13 @@
             <p class="footer__navigation-text">Санкт-Петербург, набережная <br /> реки Карповки, 5, литера П.</p>
             <ul class="footer__navigation-list">
               <li class="footer__navigation-item">
-                <a class="footer__navigation-link subtitle" href="#">Доставка</a>
+                <a class="footer__navigation-link widescale" href="#">Доставка</a>
               </li>
               <li class="footer__navigation-item">
-                <a class="footer__navigation-link subtitle" href="#">Гарантия</a>
+                <a class="footer__navigation-link widescale" href="#">Гарантия</a>
               </li>
               <li class="footer__navigation-item">
-                <a class="footer__navigation-link subtitle" href="#">Контакты</a>
+                <a class="footer__navigation-link widescale" href="#">Контакты</a>
               </li>
             </ul>
             <a class="footer__navigation-tel" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
@@ -410,6 +421,7 @@
               <path d="M109.4 27.0001L105.8 18.1001H103.6L108.4 29.7001C108.1 30.6001 107.7 30.9001 106.7 30.9001H104.2V32.9001H106.7C108.5 32.9001 109.5 32.1001 110.2 30.3001L114.9 18.1001H112.8L109.4 27.0001Z" fill="#FFC700"/>
             </svg>
           </a>
+
         </div>
       </footer>
     <!-- footer end -->
@@ -417,9 +429,3 @@
   </body>
 
 </html>
-
-
-
-
-
-
