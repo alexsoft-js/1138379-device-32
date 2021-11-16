@@ -233,8 +233,6 @@ input::-webkit-inner-spin-button {
   position: absolute;
   top: -23px;
   left: 61px;
-
-  outline: 0;
 }
 
 .header__navigation {
