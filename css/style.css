@@ -967,7 +967,7 @@ input::-webkit-inner-spin-button {
 
 .promo-slider__text {
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
 
   color: var(--basic-tundora);
 }
@@ -992,7 +992,7 @@ input::-webkit-inner-spin-button {
 }
 
 .promo-slider__term-description {
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 
   font-size: 36px;
 }
@@ -1072,7 +1072,7 @@ input::-webkit-inner-spin-button {
   width: 12px;
   height: 12px;
   padding: 0;
-
+  outline: 0;
   background-color: transparent;
   border: 2px solid var(--basic-black);
   border-radius: 50%;
@@ -1326,7 +1326,7 @@ input::-webkit-inner-spin-button {
 
 .services__description-title {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 33px;
 }
 
 .services__description-text {
@@ -1471,7 +1471,7 @@ input::-webkit-inner-spin-button {
 
 .about-us__title {
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 44px;
 }
 
 .about-us__description {
@@ -1523,7 +1523,7 @@ input::-webkit-inner-spin-button {
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 44px;
 }
 
 .contacts__description {
@@ -1542,7 +1542,7 @@ input::-webkit-inner-spin-button {
 }
 
 .contacts__address {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 
   font-style: normal;
 }
@@ -1578,7 +1578,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 55px;
+  margin-bottom: 54px;
 }
 
 .distribution__title {
@@ -1871,7 +1871,7 @@ input::-webkit-inner-spin-button {
 }
 
 .filters__block--color {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .filters__list {
@@ -1990,7 +1990,7 @@ input::-webkit-inner-spin-button {
 
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: 40% 40%;
+  background-position: center;
   border: 2px solid var(--basic-black);
   border-radius: 3px;
   opacity: 0.2;
@@ -2011,7 +2011,7 @@ input::-webkit-inner-spin-button {
 }
 
 .filters__block--bluetooth {
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 }
 
 .filters__submit {
@@ -2060,6 +2060,10 @@ input::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
   width: 832px;
+}
+
+.products__sort-list {
+  display: none;
 }
 
 .products__title {
